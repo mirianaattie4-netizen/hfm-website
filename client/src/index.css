@@ -179,3 +179,46 @@
   .reveal-delay-3 { transition-delay: 0.45s; }
   .reveal-delay-4 { transition-delay: 0.6s; }
 }
+
+/* ============================================================
+   HFM PWA — Mobile App Styles
+   ============================================================ */
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Smooth scrolling for mobile */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Hide scrollbar on mobile horizontal scroll */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+.overflow-x-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* PWA safe areas */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .pwa-bottom-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pwa-top-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
+/* Mobile app body — no overflow */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    background: #0A0806;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "HFM — Holistique Fonctionnelle Méthode",
+  "short_name": "HFM",
+  "description": "Application Coach Mimi — Fitness premium à Abidjan. HIIT, Pilates, Mobilité, Cardio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0806",
+  "theme_color": "#C9A96E",
+  "orientation": "portrait",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/icon-192_20775be2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/icon-512_c9433665.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "fitness", "sports"],
+  "screenshots": []
+}

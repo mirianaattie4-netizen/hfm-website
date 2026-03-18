@@ -2,20 +2,56 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="description" content="HFM — Holistique Fonctionnelle Méthode. Coaching fitness premium par Coach Mimi à Abidjan. HIIT, Yoga, Mobilité, Pilates, Gainage. Programmes entreprises et enfants." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="description" content="HFM — Holistique Fonctionnelle Méthode. Coaching fitness premium par Coach Mimi à Abidjan. HIIT, Yoga, Mobilité, Pilates, Gainage." />
     <meta name="keywords" content="fitness Abidjan, coach sportif, HIIT, yoga, Coach Mimi, HFM, programme fitness, bien-être, Côte d'Ivoire" />
+
+    <!-- PWA Meta Tags -->
+    <meta name="application-name" content="HFM" />
+    <meta name="theme-color" content="#C9A96E" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="HFM" />
+    <meta name="msapplication-TileColor" content="#0A0806" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="HFM — Holistique Fonctionnelle Méthode" />
     <meta property="og:description" content="Coaching fitness premium par Coach Mimi · Abidjan, Côte d'Ivoire" />
     <meta property="og:type" content="website" />
-    <title>HFM — Holistique Fonctionnelle Méthode | Coach Mimi</title>
+
+    <title>HFM — Coach Mimi</title>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/icon-192_20775be2.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/icon-192_20775be2.png" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+    <!-- Splash screens for iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(
+            (reg) => console.log('SW registered:', reg.scope),
+            (err) => console.log('SW registration failed:', err)
+          );
+        });
+      }
+    </script>
     <script
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
