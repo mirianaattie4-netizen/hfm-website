@@ -23,27 +23,27 @@ const disciplines = [
 
 const formules = [
   {
-    name: "ESSENTIEL",
-    subtitle: "Démarrer",
+    name: "SÉANCE UNIQUE",
+    subtitle: "Team Building",
     price: "100 000",
-    seances: "4 séances/mois",
-    features: ["2 séances groupe (6 pers)", "2 séances privées VIP", "Bilan initial inclus", "Planning mensuel"],
+    seances: "1 séance",
+    features: ["Jusqu'à 15 participants", "Cours collectif sur site", "Matériel fourni par HFM", "Animateur Coach Mimi"],
     highlight: false,
   },
   {
-    name: "PREMIUM",
+    name: "PROGRAMME MENSUEL",
     subtitle: "Le plus populaire",
-    price: "180 000",
-    seances: "8 séances/mois",
-    features: ["4 séances groupe (6 pers)", "4 séances privées VIP", "Bilan & suivi personnalisé", "Flexibilité horaire", "Rapport mensuel"],
+    price: "350 000",
+    seances: "4 séances/mois",
+    features: ["Jusqu'à 15 participants", "4 cours collectifs/mois", "Planning flexible", "Rapport mensuel bien-être", "Suivi personnalisé"],
     highlight: true,
   },
   {
-    name: "EXCELLENCE",
-    subtitle: "L'expérience totale",
-    price: "240 000",
-    seances: "12+ séances/mois",
-    features: ["Séances groupe illimitées", "Coaching VIP prioritaire", "Programme sur-mesure", "Disponibilité exclusive", "Reporting trimestriel"],
+    name: "DEVIS SUR MESURE",
+    subtitle: "Grandes entreprises",
+    price: "Sur devis",
+    seances: "Fréquence à définir",
+    features: ["Programme personnalisé", "Nombre de participants libre", "Disciplines au choix", "Contrat annuel possible", "Disponibilité exclusive"],
     highlight: false,
   },
 ];
@@ -396,7 +396,7 @@ export default function EntreprisesSection() {
                   }}
                 >
                   {f.price}
-                  <span style={{ fontSize: "14px", fontWeight: 400, color: "#8A7E70" }}> FCFA/mois</span>
+                  {f.price !== "Sur devis" && <span style={{ fontSize: "14px", fontWeight: 400, color: "#8A7E70" }}> FCFA</span>}
                 </div>
                 <div
                   style={{

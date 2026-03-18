@@ -10,7 +10,7 @@ const navLinks = [
   { href: "#methode", label: "La Méthode" },
   { href: "#programmes", label: "Programmes" },
   { href: "#entreprises", label: "Entreprises" },
-  { href: "#kids", label: "Kids World" },
+  { href: "#bootcamp", label: "Bootcamp" },
   { href: "#tarifs", label: "Tarifs" },
   { href: "#contact", label: "Contact" },
 ];

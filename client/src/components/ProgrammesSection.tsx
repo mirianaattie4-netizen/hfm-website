@@ -39,15 +39,15 @@ const programmes = [
 ];
 
 const tarifsDomicile = [
-  { group: "1–2 personnes", price: "25 000 F", per: "/pers/séance", highlight: false },
-  { group: "3–4 personnes", price: "22 000 F", per: "/pers/séance", highlight: true, badge: "POPULAIRE" },
-  { group: "5–6 personnes", price: "20 000 F", per: "/pers/séance", highlight: false },
+  { group: "Séance 1-on-1", price: "25 000 F", per: "/séance", highlight: false },
+  { group: "Séance Duo (2 pers)", price: "40 000 F", per: "/séance", highlight: true, badge: "POPULAIRE" },
+  { group: "Séance Trio (3 pers)", price: "50 000 F", per: "/séance", highlight: false },
 ];
 
 const packsMenuels = [
-  { name: "STARTER", seances: "4 séances/mois", p12: "90 000 F", p34: "80 000 F", p56: "72 000 F", eco: "-10%" },
-  { name: "CLASSIQUE", seances: "8 séances/mois", p12: "170 000 F", p34: "150 000 F", p56: "136 000 F", eco: "-15%" },
-  { name: "PREMIUM", seances: "12 séances/mois", p12: "240 000 F", p34: "212 000 F", p56: "192 000 F", eco: "-20%" },
+  { name: "PACK 5", seances: "5 séances privées", p12: "110 000 F", p34: "éco. 15 000 F", p56: "22 000 F/séance", eco: "-15 000 F" },
+  { name: "PACK 10", seances: "10 séances privées", p12: "200 000 F", p34: "éco. 50 000 F", p56: "20 000 F/séance", eco: "-50 000 F" },
+  { name: "SUIVI MENSUEL", seances: "8 séances/mois", p12: "180 000 F", p34: "éco. 20 000 F", p56: "22 500 F/séance", eco: "-20 000 F" },
 ];
 
 export default function ProgrammesSection() {

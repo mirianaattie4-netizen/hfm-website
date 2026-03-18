@@ -103,7 +103,7 @@ export default function Footer() {
                 { href: "#methode", label: "La Méthode" },
                 { href: "#programmes", label: "Programmes" },
                 { href: "#entreprises", label: "Entreprises" },
-                { href: "#kids", label: "Kids World" },
+                { href: "#bootcamp", label: "Bootcamp Weekend" },
                 { href: "#tarifs", label: "Tarifs" },
                 { href: "#contact", label: "Contact" },
               ].map((link) => (
@@ -148,7 +148,7 @@ export default function Footer() {
                 "Coaching VIP Privé",
                 "Programmes Digitaux",
                 "Programme Entreprise",
-                "HFM Kids World",
+                "Bootcamp Weekend Assinie",
                 "Yoga & Mobilité",
                 "HIIT & Cardio",
               ].map((s) => (

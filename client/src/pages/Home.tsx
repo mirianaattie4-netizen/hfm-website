@@ -9,7 +9,7 @@ import HeroSection from "@/components/HeroSection";
 import MethodeSection from "@/components/MethodeSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import EntreprisesSection from "@/components/EntreprisesSection";
-import KidsSection from "@/components/KidsSection";
+import BootcampSection from "@/components/BootcampSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import TarifsSection from "@/components/TarifsSection";
 import ContactSection from "@/components/ContactSection";
@@ -23,7 +23,7 @@ export default function Home() {
       <MethodeSection />
       <ProgrammesSection />
       <EntreprisesSection />
-      <KidsSection />
+      <BootcampSection />
       <TestimonialsSection />
       <TarifsSection />
       <ContactSection />

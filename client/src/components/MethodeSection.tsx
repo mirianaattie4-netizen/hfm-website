@@ -9,32 +9,32 @@ const pillars = [
   {
     icon: "🔥",
     name: "HIIT",
-    desc: "Haute intensité fonctionnelle. Brûle les graisses, booste le métabolisme.",
+    desc: "Cardio haute intensité pour brûler, tonifier et performer. Résultats visibles dès les premières séances.",
     color: "#C45B4A",
-  },
-  {
-    icon: "🧘",
-    name: "Yoga",
-    desc: "Flow & Restore. Équilibre corps et esprit, flexibilité profonde.",
-    color: "#6B9E78",
   },
   {
     icon: "🤸",
     name: "Mobilité",
-    desc: "Réveil articulaire, liberté de mouvement. Prévention des blessures.",
+    desc: "Travail de la souplesse fonctionnelle et de l'amplitude articulaire. Prévention des blessures.",
     color: "#C9A96E",
+  },
+  {
+    icon: "💪",
+    name: "Gainage / Core",
+    desc: "Renforcement profond du centre du corps — la base de tout. Posture et stabilité.",
+    color: "#D4A017",
   },
   {
     icon: "💓",
     name: "Cardio",
-    desc: "Cardio fonctionnel. Endurance, santé cardiovasculaire optimale.",
+    desc: "Endurance et condition physique générale adaptées à chaque niveau. Santé cardiovasculaire optimale.",
     color: "#5B8DEF",
   },
   {
-    icon: "💪",
-    name: "Gainage",
-    desc: "Pilates & Core. Posture, équilibre, renforcement profond.",
-    color: "#D4A017",
+    icon: "🧘",
+    name: "Pilates",
+    desc: "Contrôle, respiration, posture et conscience corporelle. Méthode certifiée Upskillist.",
+    color: "#6B9E78",
   },
 ];
 
@@ -298,7 +298,7 @@ export default function MethodeSection() {
                 marginBottom: "20px",
               }}
             >
-              Miriana Attie — surnommée <strong style={{ color: "#FAF6EE" }}>Coach Mimi</strong> — a fondé HFM pour offrir une expérience de coaching premium à Abidjan. Sa méthode allie rigueur scientifique, bienveillance et approche holistique du mouvement.
+              Miriana Attie — surnommée <strong style={{ color: "#FAF6EE" }}>Coach Mimi</strong> — est une coach fitness certifiée internationale, née en 1997 à Abidjan. Fondatrice de HFM, elle allie rigueur scientifique, approche fonctionnelle et accompagnement haut de gamme pour transformer durablement le corps et le mindset de ses clientes.
             </p>
 
             <p
@@ -310,15 +310,16 @@ export default function MethodeSection() {
                 marginBottom: "30px",
               }}
             >
-              Elle intervient à domicile, en hôtel, en plein air et dans les établissements scolaires, avec une spécialité Kids Sport pour les enfants de 6 à 11 ans.
+              Sa méthode est entièrement sans machines — uniquement poids du corps et poids libres. Elle intervient à domicile, en hôtel, en plein air et dans les entreprises partenaires à Abidjan.
             </p>
 
             {/* Certifications */}
             <div className="reveal reveal-delay-4" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {[
-                { icon: "⭐", label: "Master Functional Trainer", sub: "PT Academy · Janvier 2026" },
-                { icon: "🏋️", label: "Physiologie de l'Entraînement", sub: "Les Mills · Planet Fitness Afrique" },
-                { icon: "🧘", label: "Pilates Modules 1 & 2", sub: "Upskillist International · 2026" },
+                { icon: "⭐", label: "Master Functional Trainer", sub: "PT Academy · Certification internationale avancée" },
+                { icon: "🏋️", label: "Les Mills Coach — Physiologie de l'Entraînement", sub: "Planet Fitness Afrique · Reconnue mondialement" },
+                { icon: "🧘", label: "Pilates Modules 1 & 2", sub: "Upskillist · Certifiée mars 2026" },
+                { icon: "📚", label: "Formation Fitness", sub: "Inspire Academy · Certification en ligne" },
               ].map((cert) => (
                 <div
                   key={cert.label}
