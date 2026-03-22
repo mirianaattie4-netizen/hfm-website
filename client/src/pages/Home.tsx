@@ -7,6 +7,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import MethodeSection from "@/components/MethodeSection";
+import HistoireSection from "@/components/HistoireSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import EntreprisesSection from "@/components/EntreprisesSection";
 import BootcampSection from "@/components/BootcampSection";
@@ -21,6 +22,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <MethodeSection />
+      <HistoireSection />
       <ProgrammesSection />
       <EntreprisesSection />
       <BootcampSection />
