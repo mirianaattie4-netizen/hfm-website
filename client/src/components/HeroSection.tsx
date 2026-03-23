@@ -4,7 +4,7 @@
    ============================================================ */
 import { useEffect, useRef } from "react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-hero-bg-52jJoZpdHHTvQyXfynWHkE.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-trail-run_b86039e1.jpeg";
 
 export default function HeroSection() {
   const statsRef = useRef<HTMLDivElement>(null);
@@ -49,9 +49,9 @@ export default function HeroSection() {
           inset: 0,
           backgroundImage: `url(${HERO_BG})`,
           backgroundSize: "cover",
-          backgroundPosition: "center right",
+          backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
-          opacity: 0.35,
+          opacity: 0.45,
         }}
       />
 

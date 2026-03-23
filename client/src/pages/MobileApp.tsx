@@ -9,14 +9,15 @@ import ProgrammesTab from "./mobile/ProgrammesTab";
 import EntrepriseTab from "./mobile/EntrepriseTab";
 import ContactTab from "./mobile/ContactTab";
 import HistoireTab from "./mobile/HistoireTab";
+import GalerieTab from "./mobile/GalerieTab";
 
-type Tab = "home" | "histoire" | "programmes" | "entreprise" | "contact";
+type Tab = "home" | "histoire" | "galerie" | "programmes" | "entreprise" | "contact";
 
 const tabs: { key: Tab; icon: string; label: string }[] = [
   { key: "home", icon: "🏠", label: "Accueil" },
   { key: "histoire", icon: "✨", label: "Histoire" },
+  { key: "galerie", icon: "📸", label: "Galerie" },
   { key: "programmes", icon: "💪", label: "Programmes" },
-  { key: "entreprise", icon: "🏢", label: "Entreprise" },
   { key: "contact", icon: "📱", label: "Contact" },
 ];
 
@@ -51,6 +52,7 @@ export default function MobileApp() {
       case "programmes": return <ProgrammesTab />;
       case "entreprise": return <EntrepriseTab />;
       case "histoire": return <HistoireTab />;
+      case "galerie": return <GalerieTab />;
       case "contact": return <ContactTab />;
     }
   };
@@ -91,19 +93,12 @@ export default function MobileApp() {
             style={{
               width: "36px",
               height: "36px",
-              background: "linear-gradient(135deg, #A8883F, #C9A96E)",
               borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontFamily: "'Playfair Display', serif",
-              fontWeight: 700,
-              fontSize: "14px",
-              color: "#0A0806",
+              overflow: "hidden",
               flexShrink: 0,
             }}
           >
-            H
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-logo_55986daa.png" alt="HFM" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: "12px", fontWeight: 700, color: "#FAF6EE" }}>Installer HFM</div>
@@ -161,18 +156,11 @@ export default function MobileApp() {
             style={{
               width: "32px",
               height: "32px",
-              background: "linear-gradient(135deg, #A8883F, #C9A96E)",
               borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontFamily: "'Playfair Display', serif",
-              fontWeight: 700,
-              fontSize: "13px",
-              color: "#0A0806",
+              overflow: "hidden",
             }}
           >
-            H
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-logo_55986daa.png" alt="HFM" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
           <div>
             <div

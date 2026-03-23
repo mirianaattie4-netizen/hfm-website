@@ -3,7 +3,7 @@
    ============================================================ */
 import { useEffect } from "react";
 
-const COACHING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-coaching-group-4CZXAPGTHNYc3LbCFym23B.webp";
+const COACHING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-groupe-assinie_a51c3fbc.png";
 
 const pillars = [
   {
@@ -298,7 +298,7 @@ export default function MethodeSection() {
                 marginBottom: "20px",
               }}
             >
-              Miriana Attie — surnommée <strong style={{ color: "#FAF6EE" }}>Coach Mimi</strong> — est une coach fitness certifiée internationale, née en 1997 à Abidjan. Fondatrice de HFM, elle allie rigueur scientifique, approche fonctionnelle et accompagnement haut de gamme pour transformer durablement le corps et le mindset de ses clientes.
+              Miriana Attie — surnommée <strong style={{ color: "#FAF6EE" }}>Coach Mimi</strong> — est une coach fitness certifiée internationale, née le 20 septembre 1987 à Abidjan. Fondatrice de HFM, elle a commencé sa carrière à 35 ans, après deux mariages et trois filles. Sa force ? Avoir tout construit seule, sans diplôme scolaire, avec une seule arme : sa volonté.
             </p>
 
             <p

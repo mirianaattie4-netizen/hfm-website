@@ -9,6 +9,7 @@ const navLinks = [
   { href: "#accueil", label: "Accueil" },
   { href: "#methode", label: "La Méthode" },
   { href: "#histoire", label: "Mon Histoire" },
+  { href: "#galerie", label: "Galerie" },
   { href: "#programmes", label: "Programmes" },
   { href: "#entreprises", label: "Entreprises" },
   { href: "#bootcamp", label: "Bootcamp" },
@@ -71,21 +72,14 @@ export default function Navigation() {
           >
             <div
               style={{
-                width: "40px",
-                height: "40px",
-                background: "linear-gradient(135deg, #A8883F, #C9A96E)",
+                width: "44px",
+                height: "44px",
                 borderRadius: "10px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontFamily: "'Playfair Display', serif",
-                fontWeight: 700,
-                fontSize: "16px",
-                color: "#0A0806",
+                overflow: "hidden",
                 flexShrink: 0,
               }}
             >
-              H
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-logo_55986daa.png" alt="HFM Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
             <div>
               <div

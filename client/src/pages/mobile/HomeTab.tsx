@@ -3,7 +3,7 @@
    Design: Dark Luxury Performance · Mobile First
    ============================================================ */
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-hero-bg-2dLJDV7KWJhGNjvDJEQBEz.webp";
+const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-trail-run_b86039e1.jpeg";
 
 const stats = [
   { num: "5", label: "Piliers" },
@@ -260,21 +260,15 @@ export default function HomeTab() {
           <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "16px" }}>
             <div
               style={{
-                width: "56px",
-                height: "56px",
-                background: "linear-gradient(135deg, #A8883F, #C9A96E)",
+                width: "60px",
+                height: "60px",
                 borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "22px",
-                fontWeight: 700,
-                color: "#0A0806",
+                overflow: "hidden",
                 flexShrink: 0,
+                border: "2px solid #C9A96E",
               }}
             >
-              M
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-portrait_bdf9b2f0.jpeg" alt="Coach Mimi" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
             </div>
             <div>
               <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "20px", color: "#FAF6EE" }}>
@@ -286,7 +280,7 @@ export default function HomeTab() {
             </div>
           </div>
           <p style={{ fontSize: "13px", color: "#9E8E7E", lineHeight: 1.7, marginBottom: "16px" }}>
-            Coach fitness certifiée internationale, née en 1997 à Abidjan. Sa méthode : 100% poids du corps et poids libres, zéro machine.
+            Coach fitness certifiée internationale, née le 20 septembre 1987 à Abidjan. Commencé à 35 ans, après deux mariages et trois filles. Sa méthode : 100% poids du corps, zéro machine.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
             {["Master Functional Trainer", "Les Mills Coach", "Pilates Certifiée", "Inspire Academy"].map((cert) => (
