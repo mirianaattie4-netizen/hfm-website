@@ -318,7 +318,7 @@ export default function HomeTab() {
         </h3>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
           {[
-            { icon: "📅", title: "Bootcamp Weekend", sub: "Assinie · La Maison d'Akoula", color: "#C9A96E" },
+            { icon: "📅", title: "Bootcamp Weekend", sub: "Bassam · Les Jardins d'Eden", color: "#C9A96E" },
             { icon: "🏢", title: "Programme Entreprise", sub: "Jusqu'à 15 participants", color: "#5B8DEF" },
             { icon: "💎", title: "Coaching Privé", sub: "Sessions 1-on-1 sur mesure", color: "#D4A017" },
             { icon: "👥", title: "Cours Collectifs", sub: "Max 10 pers · 3 disciplines", color: "#6B9E78" },

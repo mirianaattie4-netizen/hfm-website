@@ -3,14 +3,7 @@
    ============================================================ */
 import { useEffect, useState } from "react";
 
-const locations = [
-  { name: "Cocody", icon: "🏙️", detail: "Riviera, Angré, Deux Plateaux" },
-  { name: "Marcory", icon: "🌊", detail: "Zone 4, Marcory Résidentiel" },
-  { name: "Plateau", icon: "🏢", detail: "Centre-ville, Entreprises" },
-  { name: "Bingerville", icon: "🌿", detail: "Résidentiel, Villas" },
-  { name: "Treichville", icon: "🏘️", detail: "Quartiers résidentiels" },
-  { name: "Yopougon", icon: "🌆", detail: "Secteurs résidentiels" },
-];
+
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -228,7 +221,7 @@ export default function ContactSection() {
                     <option value="Coaching VIP privé" style={{ background: "#1A1714" }}>Coaching VIP privé</option>
                     <option value="Programme digital" style={{ background: "#1A1714" }}>Programme digital</option>
                     <option value="Programme entreprise" style={{ background: "#1A1714" }}>Programme entreprise</option>
-                    <option value="HFM Kids World" style={{ background: "#1A1714" }}>HFM Kids World</option>
+
                   </select>
                 </div>
 
@@ -331,8 +324,8 @@ export default function ContactSection() {
                   {
                     icon: "📧",
                     label: "Email",
-                    value: "mirianaattie4@gmail.com",
-                    link: "mailto:mirianaattie4@gmail.com",
+                    value: "hfm2026@outlook.fr",
+                    link: "mailto:hfm2026@outlook.fr",
                     color: "#C9A96E",
                   },
                   {
@@ -403,37 +396,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Zones d'intervention */}
-            <div className="reveal reveal-delay-2">
-              <h3
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: "20px",
-                  color: "#FAF6EE",
-                  marginBottom: "20px",
-                }}
-              >
-                Zones <em style={{ color: "#C9A96E", fontStyle: "italic" }}>d'Intervention</em>
-              </h3>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
-                {locations.map((loc) => (
-                  <div
-                    key={loc.name}
-                    style={{
-                      padding: "14px 12px",
-                      background: "rgba(201,169,110,0.04)",
-                      border: "1px solid rgba(201,169,110,0.08)",
-                      borderRadius: "10px",
-                      textAlign: "center",
-                    }}
-                  >
-                    <div style={{ fontSize: "20px", marginBottom: "5px" }}>{loc.icon}</div>
-                    <div style={{ fontSize: "12px", fontWeight: 700, color: "#FAF6EE" }}>{loc.name}</div>
-                    <div style={{ fontSize: "10px", color: "#8A7E70", marginTop: "2px" }}>{loc.detail}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

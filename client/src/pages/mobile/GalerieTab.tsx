@@ -24,10 +24,7 @@ const PHOTOS = [
     url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-portrait_bdf9b2f0.jpeg",
     caption: "Coach Mimi — Portrait",
   },
-  {
-    url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-piscine_731b8244.png",
-    caption: "Coach Mimi — Détente",
-  },
+
 ];
 
 const DIPLOMES = [

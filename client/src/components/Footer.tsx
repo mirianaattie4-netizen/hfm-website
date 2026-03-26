@@ -148,7 +148,7 @@ export default function Footer() {
                 "Coaching VIP Privé",
                 "Programmes Digitaux",
                 "Programme Entreprise",
-                "Bootcamp Weekend Assinie",
+                "Bootcamp Weekend Grand-Bassam",
                 "Yoga & Mobilité",
                 "HIIT & Cardio",
               ].map((s) => (
@@ -178,7 +178,7 @@ export default function Footer() {
               {[
                 { icon: "📍", text: "Abidjan, Côte d'Ivoire" },
                 { icon: "📱", text: "+225 07 15 15 14 08", link: "https://wa.me/2250715151408" },
-                { icon: "📧", text: "mirianaattie4@gmail.com", link: "mailto:mirianaattie4@gmail.com" },
+                { icon: "📧", text: "hfm2026@outlook.fr", link: "mailto:hfm2026@outlook.fr" },
                 { icon: "📸", text: "@hfm_coachmimi", link: "https://instagram.com/hfm_coachmimi" },
               ].map((c) => (
                 <div key={c.text} style={{ display: "flex", alignItems: "center", gap: "10px" }}>

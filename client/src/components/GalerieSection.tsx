@@ -30,11 +30,7 @@ const PHOTOS = [
     caption: "Coach Mimi — Portrait",
     category: "portrait",
   },
-  {
-    url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-piscine_731b8244.png",
-    caption: "Coach Mimi — Détente & Bien-Être",
-    category: "portrait",
-  },
+
 ];
 
 const DIPLOMES = [

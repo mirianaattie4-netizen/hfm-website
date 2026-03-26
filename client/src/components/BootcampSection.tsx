@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Bootcamp Weekend — Partenariat La Maison d'Akoula, Assinie
+   HFM Bootcamp Weekend — Partenariat Les Jardins d'Eden, Grand-Bassam
    Design: Dark Luxury Performance
    ============================================================ */
 import { useEffect } from "react";
@@ -7,8 +7,8 @@ import { useEffect } from "react";
 const BOOTCAMP_IMG = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80";
 
 const schedule = [
-  { day: "SAMEDI", events: ["17h00 — Check-in à La Maison d'Akoula", "18h00 — Yoga Sunset face à la lagune", "Soirée — Dîner libre"] },
-  { day: "DIMANCHE", events: ["07h00 — Yoga Sunrise", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Akoula", "14h00 — Départ"] },
+  { day: "SAMEDI", events: ["17h00 — Check-in aux Jardins d'Eden", "18h00 — Yoga Sunset face à la lagune", "Soirée — Dîner libre"] },
+  { day: "DIMANCHE", events: ["07h00 — Yoga Sunrise", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Healthy", "14h00 — Départ"] },
 ];
 
 const packs = [
@@ -22,7 +22,7 @@ const packs = [
   {
     name: "Pass Dimanche + Brunch",
     subtitle: "Expérience complète",
-    includes: ["3 cours collectifs", "Brunch Akoula inclus"],
+    includes: ["3 cours collectifs", "Brunch inclus"],
     price: "40 000",
     highlight: true,
   },
@@ -120,14 +120,14 @@ export default function BootcampSection() {
           >
             <span style={{ fontSize: "14px" }}>🌊</span>
             <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "2px", color: "#C9A96E", textTransform: "uppercase" }}>
-              La Maison d'Akoula — Assinie
+              Les Jardins d'Eden — Grand-Bassam
             </span>
           </div>
           <p
             className="reveal reveal-delay-3"
             style={{ fontSize: "15px", color: "#8A7E70", lineHeight: 1.7, maxWidth: "600px", margin: "0 auto" }}
           >
-            Un weekend fitness immersif dans un cadre luxueux face à la lagune. Yoga au lever du soleil, HIIT intense, Mobility recovery et Brunch healthy. <strong style={{ color: "#C9A96E" }}>1 weekend par mois</strong>, de mars à décembre.
+            Un weekend fitness immersif dans un cadre luxueux face à la lagune à Grand-Bassam. Yoga au lever du soleil, HIIT intense, Mobility recovery et Brunch healthy. <strong style={{ color: "#C9A96E" }}>1 weekend par mois</strong>, de mars à décembre.
           </p>
         </div>
 
@@ -326,7 +326,7 @@ export default function BootcampSection() {
             Places limitées — 1 weekend par mois · Mars à Décembre 2026
           </p>
           <a
-            href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20Weekend%20Assinie."
+            href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20Weekend%20Bassam."
             target="_blank"
             rel="noopener noreferrer"
             style={{
