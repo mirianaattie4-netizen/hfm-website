@@ -127,7 +127,7 @@ export default function BootcampSection() {
             className="reveal reveal-delay-3"
             style={{ fontSize: "15px", color: "#8A7E70", lineHeight: 1.7, maxWidth: "600px", margin: "0 auto" }}
           >
-            Un weekend fitness immersif dans un cadre luxueux face à la lagune à Grand-Bassam. Pilates au sol, HIIT intense, Mobility recovery et Brunch healthy. <strong style={{ color: "#C9A96E" }}>1 weekend par mois</strong>, de mars à décembre.
+            Un weekend fitness immersif dans un cadre luxueux face à la lagune à Grand-Bassam. Pilates au sol, HIIT intense, Mobility recovery et Brunch healthy. <strong style={{ color: "#C9A96E" }}>1ère édition : 30 Avril & 1er Mai 2026</strong> — Places limitées !
           </p>
         </div>
 
@@ -320,13 +320,13 @@ export default function BootcampSection() {
               marginBottom: "12px",
             }}
           >
-            Réservez votre place au prochain Bootcamp 🌊
+            Réservez votre place — 1ère Édition 🌊
           </h3>
           <p style={{ fontSize: "14px", color: "#8A7E70", marginBottom: "30px" }}>
-            Places limitées — 1 weekend par mois · Mars à Décembre 2026
+            📅 30 Avril & 1er Mai 2026 · Les Jardins d'Eden, Grand-Bassam · Places limitées !
           </p>
           <a
-            href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20Weekend%20Bassam."
+            href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20du%2030%20Avril%20%26%201er%20Mai%202026%20aux%20Jardins%20d%27Eden%2C%20Grand-Bassam."
             target="_blank"
             rel="noopener noreferrer"
             style={{

@@ -43,9 +43,9 @@ const formules = [
 ];
 
 const weekends = [
-  { value: "avril_2026", label: "Avril 2026" },
-  { value: "juin_2026", label: "Juin 2026" },
-  { value: "septembre_2026", label: "Septembre 2026" },
+  { value: "30avril_2026", label: "📅 1ère Édition — 30 Avril & 1er Mai 2026" },
+  { value: "juin_2026", label: "📅 2ème Édition — Juin 2026" },
+  { value: "septembre_2026", label: "📅 3ème Édition — Septembre 2026" },
 ];
 
 const objectifs = [
