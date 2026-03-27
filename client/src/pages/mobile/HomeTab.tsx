@@ -3,7 +3,7 @@
    Design: Dark Luxury Performance · Mobile First
    ============================================================ */
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-trail-run_b86039e1.jpeg";
+const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-pro-photo_291349d0.jpeg";
 
 const stats = [
   { num: "5", label: "Piliers" },
@@ -268,7 +268,7 @@ export default function HomeTab() {
                 border: "2px solid #C9A96E",
               }}
             >
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-portrait_bdf9b2f0.jpeg" alt="Coach Mimi" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-pro-photo_291349d0.jpeg" alt="Coach Mimi" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
             </div>
             <div>
               <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "20px", color: "#FAF6EE" }}>

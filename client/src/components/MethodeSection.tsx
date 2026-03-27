@@ -3,7 +3,7 @@
    ============================================================ */
 import { useEffect } from "react";
 
-const COACHING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-groupe-assinie_a51c3fbc.png";
+const COACHING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-pro-photo_291349d0.jpeg";
 
 const pillars = [
   {
