@@ -86,7 +86,7 @@ export default function ProgrammesTab() {
         {tab === "collectifs" && (
           <div>
             <p style={{ fontSize: "12px", color: "#8A7E70", marginBottom: "16px" }}>
-              HIIT • Yoga • Mobility • Cardio — Max 10 personnes
+              HIIT • Pilates au sol • Mobility • Cardio — Max 10 personnes
             </p>
 
             {/* Séances */}
@@ -287,7 +287,7 @@ export default function ProgrammesTab() {
             >
               <span style={{ fontSize: "28px" }}>🌊</span>
               <div>
-                <div style={{ fontSize: "14px", fontWeight: 700, color: "#FAF6EE" }}>La Maison d'Akoula — Assinie</div>
+                <div style={{ fontSize: "14px", fontWeight: 700, color: "#FAF6EE" }}>Les Jardins d'Eden — Grand-Bassam</div>
                 <div style={{ fontSize: "11px", color: "#8A7E70" }}>1 weekend/mois · Mars à Décembre 2026</div>
               </div>
             </div>

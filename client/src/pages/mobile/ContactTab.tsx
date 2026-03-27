@@ -13,7 +13,7 @@ const lieux = [
   { icon: "🎨", name: "Art en Ciel", detail: "Marcory, Abidjan" },
   { icon: "✨", name: "Noor Concept", detail: "Zone 4, Abidjan" },
   { icon: "🏢", name: "Entreprises & Hôtels", detail: "Sur site, Abidjan & environs" },
-  { icon: "🌊", name: "La Maison d'Akoula", detail: "Grand-Bassam · Bootcamp Weekend" },
+  { icon: "🌊", name: "Les Jardins d'Eden", detail: "Grand-Bassam · Bootcamp Weekend" },
 ];
 
 export default function ContactTab() {

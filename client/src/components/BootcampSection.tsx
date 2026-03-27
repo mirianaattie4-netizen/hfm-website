@@ -127,7 +127,7 @@ export default function BootcampSection() {
             className="reveal reveal-delay-3"
             style={{ fontSize: "15px", color: "#8A7E70", lineHeight: 1.7, maxWidth: "600px", margin: "0 auto" }}
           >
-            Un weekend fitness immersif dans un cadre luxueux face à la lagune à Grand-Bassam. Yoga au lever du soleil, HIIT intense, Mobility recovery et Brunch healthy. <strong style={{ color: "#C9A96E" }}>1 weekend par mois</strong>, de mars à décembre.
+            Un weekend fitness immersif dans un cadre luxueux face à la lagune à Grand-Bassam. Pilates au sol, HIIT intense, Mobility recovery et Brunch healthy. <strong style={{ color: "#C9A96E" }}>1 weekend par mois</strong>, de mars à décembre.
           </p>
         </div>
 

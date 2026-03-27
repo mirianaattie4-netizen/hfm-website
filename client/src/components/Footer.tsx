@@ -149,7 +149,7 @@ export default function Footer() {
                 "Programmes Digitaux",
                 "Programme Entreprise",
                 "Bootcamp Weekend Grand-Bassam",
-                "Yoga & Mobilité",
+                "Pilates & Mobilité",
                 "HIIT & Cardio",
               ].map((s) => (
                 <li key={s} style={{ fontSize: "13px", color: "#8A7E70" }}>

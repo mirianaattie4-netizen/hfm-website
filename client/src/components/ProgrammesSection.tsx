@@ -3,7 +3,7 @@
    ============================================================ */
 import { useEffect } from "react";
 
-const YOGA_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-yoga-8dxZXvcgkZibNsEyQNkYvf.webp";
+const PILATES_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-yoga-8dxZXvcgkZibNsEyQNkYvf.webp";
 
 const programmes = [
   {
@@ -30,9 +30,9 @@ const programmes = [
     badge: "NOUVEAU",
     badgeColor: "#6B9E78",
     icon: "🧘",
-    name: "Yoga & Mobilité",
+    name: "Pilates & Mobilité",
     desc: "Programme dédié souplesse et récupération. Idéal en complément ou en solo.",
-    features: ["4 semaines", "Yoga flow", "Mobilité", "Anti-stress"],
+    features: ["4 semaines", "Pilates au sol", "Mobilité", "Anti-stress"],
     price: "35 000",
     currency: "FCFA",
   },
@@ -498,7 +498,7 @@ export default function ProgrammesSection() {
               </table>
             </div>
 
-            {/* Yoga image */}
+            {/* Pilates image */}
             <div
               className="reveal"
               style={{
@@ -509,8 +509,8 @@ export default function ProgrammesSection() {
               }}
             >
               <img
-                src={YOGA_IMG}
-                alt="Yoga & Mobilité HFM"
+                src={PILATES_IMG}
+                alt="Pilates & Mobilité HFM"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>

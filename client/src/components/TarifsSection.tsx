@@ -101,7 +101,7 @@ export default function TarifsSection() {
         {activeTab === "collectifs" && (
           <div>
             <p style={{ textAlign: "center", fontSize: "13px", color: "#8A7E70", marginBottom: "40px" }}>
-              HIIT • Yoga • Mobility • Cardio Fonctionnel — Maximum 10 personnes par cours
+              HIIT • Pilates au sol • Mobility • Cardio Fonctionnel — Maximum 10 personnes par cours
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", marginBottom: "50px" }} className="tarifs-two-col">
