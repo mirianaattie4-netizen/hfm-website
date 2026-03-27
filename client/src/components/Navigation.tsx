@@ -13,6 +13,7 @@ const navLinks = [
   { href: "#programmes", label: "Programmes" },
   { href: "#entreprises", label: "Entreprises" },
   { href: "#bootcamp", label: "Bootcamp" },
+  { href: "#inscription", label: "S'inscrire" },
   { href: "#tarifs", label: "Tarifs" },
   { href: "#contact", label: "Contact" },
 ];
