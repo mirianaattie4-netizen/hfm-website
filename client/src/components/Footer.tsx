@@ -179,7 +179,7 @@ export default function Footer() {
                 { icon: "📍", text: "Abidjan, Côte d'Ivoire" },
                 { icon: "📱", text: "+225 07 15 15 14 08", link: "https://wa.me/2250715151408" },
                 { icon: "📧", text: "hfm2026@outlook.fr", link: "mailto:hfm2026@outlook.fr" },
-                { icon: "📸", text: "@hfm_coachmimi", link: "https://instagram.com/hfm_coachmimi" },
+                { icon: "📸", text: "@coachmimi87", link: "https://instagram.com/coachmimi87" },
               ].map((c) => (
                 <div key={c.text} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                   <span style={{ fontSize: "14px" }}>{c.icon}</span>

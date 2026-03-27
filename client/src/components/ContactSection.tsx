@@ -331,8 +331,8 @@ export default function ContactSection() {
                   {
                     icon: "📸",
                     label: "Instagram",
-                    value: "@hfm_coachmimi",
-                    link: "https://instagram.com/hfm_coachmimi",
+                    value: "@coachmimi87",
+                    link: "https://instagram.com/coachmimi87",
                     color: "#E1306C",
                   },
                   {

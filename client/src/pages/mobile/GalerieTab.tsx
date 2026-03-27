@@ -18,7 +18,7 @@ const PHOTOS = [
   },
   {
     url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-groupe-assinie_a51c3fbc.png",
-    caption: "Bootcamp Assinie — Groupe",
+    caption: "Bootcamp Les Jardins d'Eden — Grand-Bassam",
   },
   {
     url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-portrait_bdf9b2f0.jpeg",

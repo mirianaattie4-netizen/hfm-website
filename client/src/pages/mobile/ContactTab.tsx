@@ -91,7 +91,7 @@ export default function ContactTab() {
         </a>
 
         <a
-          href="mailto:hfm.coachmimi@gmail.com"
+          href="mailto:hfm2026@outlook.fr"
           style={{
             display: "flex",
             alignItems: "center",
@@ -106,12 +106,12 @@ export default function ContactTab() {
           <span style={{ fontSize: "24px" }}>📧</span>
           <div>
             <div style={{ fontSize: "13px", fontWeight: 700, color: "#FAF6EE" }}>Email</div>
-            <div style={{ fontSize: "11px", color: "#8A7E70" }}>hfm.coachmimi@gmail.com</div>
+            <div style={{ fontSize: "11px", color: "#8A7E70" }}>hfm2026@outlook.fr</div>
           </div>
         </a>
 
         <a
-          href="https://instagram.com/hfm_abidjan"
+          href="https://instagram.com/coachmimi87"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -128,7 +128,7 @@ export default function ContactTab() {
           <span style={{ fontSize: "24px" }}>📸</span>
           <div>
             <div style={{ fontSize: "13px", fontWeight: 700, color: "#FAF6EE" }}>Instagram</div>
-            <div style={{ fontSize: "11px", color: "#8A7E70" }}>@hfm_abidjan · @coachmimi_hfm</div>
+            <div style={{ fontSize: "11px", color: "#8A7E70" }}>@coachmimi87</div>
           </div>
         </a>
 

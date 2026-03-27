@@ -116,7 +116,7 @@ export default function EntreprisesSection() {
               Matériel fourni par HFM — zéro contrainte logistique pour vous. Séances de 6 participants maximum pour un suivi personnalisé optimal.
             </p>
             <a
-              href="mailto:mirianaattie4@gmail.com"
+              href="mailto:hfm2026@outlook.fr"
               className="reveal reveal-delay-4"
               style={{
                 display: "inline-flex",
@@ -430,7 +430,7 @@ export default function EntreprisesSection() {
                   ))}
                 </ul>
                 <a
-                  href="mailto:mirianaattie4@gmail.com"
+                  href="mailto:hfm2026@outlook.fr"
                   style={{
                     display: "block",
                     textAlign: "center",

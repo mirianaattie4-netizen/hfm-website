@@ -22,7 +22,7 @@ const PHOTOS = [
   },
   {
     url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/mimi-groupe-assinie_a51c3fbc.png",
-    caption: "Bootcamp Assinie — Séance de groupe",
+    caption: "Bootcamp Les Jardins d'Eden — Grand-Bassam",
     category: "coaching",
   },
   {

@@ -22,8 +22,8 @@ const testimonials = [
   },
   {
     name: "Fatoumata B.",
-    role: "Maman de 2 enfants, Marcory",
-    text: "Mes enfants adorent les séances Kids World ! Ils ne regardent plus la télé, ils veulent faire du sport. Coach Mimi a un don pour rendre le fitness fun et accessible.",
+    role: "Maman de 3 enfants, Marcory",
+    text: "Les séances de Pilates au sol avec Coach Mimi ont transformé ma posture et réduit mes douleurs de dos. En 6 semaines, je me sens plus forte et plus équilibrée. Je recommande à toutes les mamans !",
     rating: 5,
     avatar: "F",
     color: "#FF6B9D",

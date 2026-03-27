@@ -350,7 +350,7 @@ export default function ProgrammesTab() {
             </div>
 
             <a
-              href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20Weekend%20Assinie."
+              href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20Weekend%20Bassam."
               target="_blank"
               rel="noopener noreferrer"
               style={{
