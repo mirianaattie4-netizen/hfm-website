@@ -7,15 +7,15 @@ import { useEffect } from "react";
 const BOOTCAMP_IMG = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80";
 
 const schedule = [
-  { day: "SAMEDI", events: ["17h00 — Check-in aux Jardins d'Eden", "18h00 — Yoga Sunset face à la lagune", "Soirée — Dîner libre"] },
-  { day: "DIMANCHE", events: ["07h00 — Yoga Sunrise", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Healthy", "14h00 — Départ"] },
+  { day: "SAMEDI", events: ["17h00 — Check-in aux Jardins d'Eden", "18h00 — Pilates Sunset face à la lagune", "Soirée — Dîner libre"] },
+  { day: "DIMANCHE", events: ["07h00 — Active Muscle", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Les Jardins d'Eden", "14h00 — Départ"] },
 ];
 
 const packs = [
   {
     name: "Pass Dimanche",
     subtitle: "Journée complète",
-    includes: ["Yoga + HIIT + Mobility", "3 cours collectifs"],
+    includes: ["Pilates au sol + HIIT + Mobility", "3 cours collectifs"],
     price: "30 000",
     highlight: false,
   },
@@ -201,10 +201,10 @@ export default function BootcampSection() {
               <span style={{ fontSize: "32px" }}>🌴</span>
               <div>
                 <div style={{ fontSize: "14px", fontWeight: 700, color: "#FAF6EE", marginBottom: "4px" }}>
-                  La Maison d'Akoula
+                  Les Jardins d'Eden
                 </div>
                 <div style={{ fontSize: "12px", color: "#8A7E70" }}>
-                  Assinie, Côte d'Ivoire · Face à la lagune · Cadre luxueux et exclusif
+                  Grand-Bassam, Côte d'Ivoire · Face à la lagune · Cadre luxueux et exclusif
                 </div>
               </div>
             </div>

@@ -297,8 +297,8 @@ export default function ProgrammesTab() {
               Programme <em style={{ color: "#C9A96E" }}>Type</em>
             </h3>
             {[
-              { day: "SAMEDI", events: ["17h00 — Check-in", "18h00 — Yoga Sunset", "Soirée — Dîner libre"] },
-              { day: "DIMANCHE", events: ["07h00 — Yoga Sunrise", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Akoula", "14h00 — Départ"] },
+              { day: "SAMEDI", events: ["17h00 — Check-in", "18h00 — Pilates Sunset", "Soirée — Dîner libre"] },
+              { day: "DIMANCHE", events: ["07h00 — Active Muscle", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Les Jardins d'Eden", "14h00 — Départ"] },
             ].map((d) => (
               <div key={d.day} style={{ marginBottom: "12px", background: "#1A1714", border: "1px solid rgba(201,169,110,0.08)", borderRadius: "12px", overflow: "hidden" }}>
                 <div style={{ padding: "8px 14px", background: "rgba(201,169,110,0.08)", fontFamily: "'Montserrat', sans-serif", fontSize: "10px", fontWeight: 700, letterSpacing: "2px", color: "#C9A96E" }}>
@@ -321,8 +321,8 @@ export default function ProgrammesTab() {
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
-                { label: "Pass Dimanche", detail: "Yoga + HIIT + Mobility", price: "30 000 F" },
-                { label: "Pass Dimanche + Brunch", detail: "3 cours + Brunch Akoula", price: "40 000 F", highlight: true },
+                { label: "Pass Dimanche", detail: "Pilates au sol + HIIT + Mobility", price: "30 000 F" },
+                { label: "Pass Dimanche + Brunch", detail: "3 cours + Brunch Jardins d'Eden", price: "40 000 F", highlight: true },
                 { label: "Retreat Solo", detail: "Chambre + 3 cours + Brunch", price: "95 000 F" },
                 { label: "Retreat Duo", detail: "Chambre 2 pers + 3 cours + Brunch", price: "150 000 F" },
               ].map((item) => (
