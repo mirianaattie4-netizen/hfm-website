@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#galerie", label: "Galerie" },
   { href: "#programmes", label: "Programmes" },
   { href: "#entreprises", label: "Entreprises" },
-
+  { href: "#digital", label: "Digital" },
   { href: "#tarifs", label: "Tarifs" },
   { href: "#contact", label: "Contact" },
 ];

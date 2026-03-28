@@ -103,6 +103,7 @@ export default function Footer() {
                 { href: "#methode", label: "La Méthode" },
                 { href: "#programmes", label: "Programmes" },
                 { href: "#entreprises", label: "Entreprises" },
+                { href: "#digital", label: "Programmes Digitaux" },
                 { href: "#tarifs", label: "Tarifs" },
                 { href: "#contact", label: "Contact" },
               ].map((link) => (
@@ -145,8 +146,9 @@ export default function Footer() {
               {[
                 "Coaching à Domicile",
                 "Coaching VIP Privé",
-                "Programmes Digitaux",
                 "Programme Entreprise",
+                "Programmes Digitaux PDF",
+                "Vidéos HD Coaching",
                 "Pilates & Mobilité",
                 "HIIT & Cardio",
               ].map((s) => (

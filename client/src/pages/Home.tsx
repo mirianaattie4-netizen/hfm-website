@@ -11,7 +11,7 @@ import HistoireSection from "@/components/HistoireSection";
 import GalerieSection from "@/components/GalerieSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import EntreprisesSection from "@/components/EntreprisesSection";
-
+import DigitalSection from "@/components/DigitalSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import TarifsSection from "@/components/TarifsSection";
 import ContactSection from "@/components/ContactSection";
@@ -27,7 +27,7 @@ export default function Home() {
       <GalerieSection />
       <ProgrammesSection />
       <EntreprisesSection />
-
+      <DigitalSection />
       <TestimonialsSection />
       <TarifsSection />
       <ContactSection />

@@ -10,14 +10,16 @@ import EntrepriseTab from "./mobile/EntrepriseTab";
 import ContactTab from "./mobile/ContactTab";
 import HistoireTab from "./mobile/HistoireTab";
 import GalerieTab from "./mobile/GalerieTab";
+import DigitalTab from "./mobile/DigitalTab";
 
-type Tab = "home" | "histoire" | "galerie" | "programmes" | "entreprise" | "contact";
+type Tab = "home" | "histoire" | "galerie" | "programmes" | "digital" | "entreprise" | "contact";
 
 const tabs: { key: Tab; icon: string; label: string }[] = [
   { key: "home", icon: "🏠", label: "Accueil" },
   { key: "histoire", icon: "✨", label: "Histoire" },
   { key: "galerie", icon: "📸", label: "Galerie" },
   { key: "programmes", icon: "💪", label: "Programmes" },
+  { key: "digital", icon: "📲", label: "Digital" },
   { key: "contact", icon: "📱", label: "Contact" },
 ];
 
@@ -53,6 +55,7 @@ export default function MobileApp() {
       case "entreprise": return <EntrepriseTab />;
       case "histoire": return <HistoireTab />;
       case "galerie": return <GalerieTab />;
+      case "digital": return <DigitalTab />;
       case "contact": return <ContactTab />;
     }
   };
