@@ -103,7 +103,6 @@ export default function Footer() {
                 { href: "#methode", label: "La Méthode" },
                 { href: "#programmes", label: "Programmes" },
                 { href: "#entreprises", label: "Entreprises" },
-                { href: "#bootcamp", label: "Bootcamp Weekend" },
                 { href: "#tarifs", label: "Tarifs" },
                 { href: "#contact", label: "Contact" },
               ].map((link) => (
@@ -148,7 +147,6 @@ export default function Footer() {
                 "Coaching VIP Privé",
                 "Programmes Digitaux",
                 "Programme Entreprise",
-                "Bootcamp Weekend Grand-Bassam",
                 "Pilates & Mobilité",
                 "HIIT & Cardio",
               ].map((s) => (

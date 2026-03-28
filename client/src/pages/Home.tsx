@@ -11,8 +11,7 @@ import HistoireSection from "@/components/HistoireSection";
 import GalerieSection from "@/components/GalerieSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import EntreprisesSection from "@/components/EntreprisesSection";
-import BootcampSection from "@/components/BootcampSection";
-import InscriptionBootcamp from "@/components/InscriptionBootcamp";
+
 import TestimonialsSection from "@/components/TestimonialsSection";
 import TarifsSection from "@/components/TarifsSection";
 import ContactSection from "@/components/ContactSection";
@@ -28,8 +27,7 @@ export default function Home() {
       <GalerieSection />
       <ProgrammesSection />
       <EntreprisesSection />
-      <BootcampSection />
-      <InscriptionBootcamp />
+
       <TestimonialsSection />
       <TarifsSection />
       <ContactSection />

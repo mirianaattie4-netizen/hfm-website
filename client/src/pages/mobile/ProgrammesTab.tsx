@@ -3,7 +3,7 @@
    ============================================================ */
 import { useState } from "react";
 
-type TabKey = "collectifs" | "prive" | "bootcamp";
+type TabKey = "collectifs" | "prive";
 
 export default function ProgrammesTab() {
   const [tab, setTab] = useState<TabKey>("collectifs");
@@ -54,7 +54,6 @@ export default function ProgrammesTab() {
         {([
           { key: "collectifs" as TabKey, label: "Collectifs", icon: "👥" },
           { key: "prive" as TabKey, label: "Privé", icon: "⭐" },
-          { key: "bootcamp" as TabKey, label: "Bootcamp", icon: "🌊" },
         ] as const).map((t) => (
           <button
             key={t.key}
@@ -271,108 +270,6 @@ export default function ProgrammesTab() {
           </div>
         )}
 
-        {tab === "bootcamp" && (
-          <div>
-            <div
-              style={{
-                padding: "16px",
-                background: "rgba(201,169,110,0.06)",
-                border: "1px solid rgba(201,169,110,0.15)",
-                borderRadius: "14px",
-                marginBottom: "16px",
-                display: "flex",
-                alignItems: "center",
-                gap: "12px",
-              }}
-            >
-              <span style={{ fontSize: "28px" }}>🌊</span>
-              <div>
-                <div style={{ fontSize: "14px", fontWeight: 700, color: "#FAF6EE" }}>Les Jardins d'Eden — Grand-Bassam</div>
-                <div style={{ fontSize: "11px", color: "#8A7E70" }}>1 weekend/mois · Mars à Décembre 2026</div>
-              </div>
-            </div>
-
-            {/* Programme */}
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "18px", color: "#FAF6EE", marginBottom: "12px" }}>
-              Programme <em style={{ color: "#C9A96E" }}>Type</em>
-            </h3>
-            {[
-              { day: "SAMEDI", events: ["17h00 — Check-in", "18h00 — Pilates Sunset", "Soirée — Dîner libre"] },
-              { day: "DIMANCHE", events: ["07h00 — Active Muscle", "09h00 — HIIT intense", "10h30 — Mobility Recovery", "12h00 — Brunch Les Jardins d'Eden", "14h00 — Départ"] },
-            ].map((d) => (
-              <div key={d.day} style={{ marginBottom: "12px", background: "#1A1714", border: "1px solid rgba(201,169,110,0.08)", borderRadius: "12px", overflow: "hidden" }}>
-                <div style={{ padding: "8px 14px", background: "rgba(201,169,110,0.08)", fontFamily: "'Montserrat', sans-serif", fontSize: "10px", fontWeight: 700, letterSpacing: "2px", color: "#C9A96E" }}>
-                  {d.day}
-                </div>
-                <div style={{ padding: "10px 14px" }}>
-                  {d.events.map((e) => (
-                    <div key={e} style={{ fontSize: "12px", color: "#D4C4A8", marginBottom: "5px", display: "flex", alignItems: "center", gap: "8px" }}>
-                      <div style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#C9A96E", flexShrink: 0 }} />
-                      {e}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-
-            {/* Tarifs */}
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "18px", color: "#FAF6EE", marginBottom: "12px", marginTop: "20px" }}>
-              Formules & <em style={{ color: "#C9A96E" }}>Tarifs</em>
-            </h3>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              {[
-                { label: "Pass Dimanche", detail: "Pilates au sol + HIIT + Mobility", price: "30 000 F" },
-                { label: "Pass Dimanche + Brunch", detail: "3 cours + Brunch Jardins d'Eden", price: "40 000 F", highlight: true },
-                { label: "Retreat Solo", detail: "Chambre + 3 cours + Brunch", price: "95 000 F" },
-                { label: "Retreat Duo", detail: "Chambre 2 pers + 3 cours + Brunch", price: "150 000 F" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    padding: "14px 16px",
-                    background: item.highlight ? "rgba(201,169,110,0.06)" : "#1A1714",
-                    border: item.highlight ? "1px solid rgba(201,169,110,0.25)" : "1px solid rgba(201,169,110,0.08)",
-                    borderRadius: "12px",
-                  }}
-                >
-                  <div>
-                    <div style={{ fontSize: "13px", color: "#FAF6EE", fontWeight: 600 }}>{item.label}</div>
-                    <div style={{ fontSize: "11px", color: "#8A7E70", marginTop: "2px" }}>{item.detail}</div>
-                  </div>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "18px", fontWeight: 700, color: "#C9A96E" }}>
-                    {item.price}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <a
-              href="https://wa.me/2250715151408?text=Bonjour%20Coach%20Mimi%20!%20Je%20souhaite%20r%C3%A9server%20une%20place%20au%20Bootcamp%20Weekend%20Bassam."
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "block",
-                marginTop: "20px",
-                padding: "16px",
-                background: "#C9A96E",
-                borderRadius: "14px",
-                fontFamily: "'Montserrat', sans-serif",
-                fontSize: "12px",
-                fontWeight: 800,
-                letterSpacing: "1.5px",
-                textTransform: "uppercase",
-                color: "#0A0806",
-                textDecoration: "none",
-                textAlign: "center",
-              }}
-            >
-              🌊 Réserver le Bootcamp
-            </a>
-          </div>
-        )}
       </div>
     </div>
   );
