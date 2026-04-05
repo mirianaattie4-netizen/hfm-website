@@ -10,7 +10,7 @@ const VIDEO_1 = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf
 const VIDEO_2 = "https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-video-2_17bbceab.mp4";
 
 type FilterKey = "tous" | "pdf" | "video" | "pack";
-type SortKey = "popularite" | "prix-asc" | "prix-desc" | "date-desc" | "date-asc";
+type SortKey = "popularite" | "date-desc" | "date-asc";
 
 const trailers = [
   { id: "trailer-1", src: VIDEO_1, title: "Séance HIIT Express — Coach Mimi", subtitle: "Aperçu · Programme HIIT 30 Jours", tag: "HIIT", tagColor: "#C9A96E" },
@@ -137,8 +137,6 @@ const allProducts = [
 
 const sortOptions: { key: SortKey; label: string; icon: string }[] = [
   { key: "popularite", label: "Popularité", icon: "🔥" },
-  { key: "prix-asc", label: "Prix ↑", icon: "💰" },
-  { key: "prix-desc", label: "Prix ↓", icon: "💎" },
   { key: "date-desc", label: "Plus récent", icon: "🆕" },
   { key: "date-asc", label: "Plus ancien", icon: "📅" },
 ];
@@ -159,8 +157,6 @@ export default function DigitalSection() {
     let list = activeFilter === "tous" ? [...allProducts] : allProducts.filter((p) => p.filter === activeFilter);
     switch (activeSort) {
       case "popularite":   list.sort((a, b) => b.popularity - a.popularity); break;
-      case "prix-asc":     list.sort((a, b) => a.price - b.price); break;
-      case "prix-desc":    list.sort((a, b) => b.price - a.price); break;
       case "date-desc":    list.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()); break;
       case "date-asc":     list.sort((a, b) => a.publishedAt.getTime() - b.publishedAt.getTime()); break;
     }
