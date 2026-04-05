@@ -159,7 +159,7 @@ export default function DigitalTab() {
 
   const handleOrder = (product: typeof allProducts[0]) => {
     const msg = encodeURIComponent(
-      `Bonjour Coach Mimi ! Je souhaite commander le programme digital "${product.title}" (${product.priceLabel}). Pouvez-vous m'envoyer les détails de paiement ?`
+      `Bonjour Coach Mimi ! Je suis intéressé(e) par le programme digital "${product.title}". Pouvez-vous m'envoyer les informations ?`
     );
     window.open(`https://wa.me/2250715151408?text=${msg}`, "_blank");
   };
@@ -381,14 +381,13 @@ export default function DigitalTab() {
                   ))}
                 </div>
 
-                {/* Price + CTA */}
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: "12px", borderTop: "1px solid rgba(201,169,110,0.08)" }}>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "19px", fontWeight: 700, color: product.color }}>{product.priceLabel}</div>
+                {/* CTA */}
+                <div style={{ paddingTop: "12px", borderTop: "1px solid rgba(201,169,110,0.08)" }}>
                   <button
                     onClick={() => handleOrder(product)}
-                    style={{ padding: "10px 16px", background: (product as any).featured ? "#C9A96E" : `${product.color}18`, border: `1px solid ${product.color}50`, borderRadius: "10px", fontFamily: "'Montserrat', sans-serif", fontSize: "10px", fontWeight: 800, letterSpacing: "1px", textTransform: "uppercase", color: (product as any).featured ? "#0A0806" : product.color, cursor: "pointer" }}
+                    style={{ width: "100%", padding: "12px 16px", background: (product as any).featured ? "#C9A96E" : `${product.color}18`, border: `1px solid ${product.color}50`, borderRadius: "10px", fontFamily: "'Montserrat', sans-serif", fontSize: "11px", fontWeight: 800, letterSpacing: "1px", textTransform: "uppercase", color: (product as any).featured ? "#0A0806" : product.color, cursor: "pointer" }}
                   >
-                    Commander →
+                    Nous Contacter →
                   </button>
                 </div>
               </div>

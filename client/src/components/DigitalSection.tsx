@@ -169,7 +169,7 @@ export default function DigitalSection() {
 
   const handleOrder = (product: typeof allProducts[0]) => {
     const msg = encodeURIComponent(
-      `Bonjour Coach Mimi ! Je souhaite commander le programme digital "${product.title}" (${product.priceLabel}). Pouvez-vous m'envoyer les détails de paiement ?`
+      `Bonjour Coach Mimi ! Je suis intéressé(e) par le programme digital "${product.title}". Pouvez-vous m'envoyer les informations ?`
     );
     window.open(`https://wa.me/2250715151408?text=${msg}`, "_blank");
   };
@@ -391,19 +391,15 @@ export default function DigitalSection() {
 
                   <div style={{ height: "1px", background: "rgba(201,169,110,0.08)", marginBottom: "16px" }} />
 
-                  {/* Price + CTA */}
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
-                    <div>
-                      <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "22px", fontWeight: 700, color: product.color, lineHeight: 1 }}>{product.priceLabel}</div>
-                      <div style={{ fontSize: "11px", color: "#6B5B4E", marginTop: "2px" }}>{product.priceEur}</div>
-                    </div>
+                  {/* CTA */}
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
                     <button
                       onClick={() => handleOrder(product)}
-                      style={{ padding: "11px 16px", background: (product as any).featured ? "#C9A96E" : `${product.color}18`, border: `1px solid ${product.color}50`, borderRadius: "10px", fontFamily: "'Montserrat', sans-serif", fontSize: "10px", fontWeight: 800, letterSpacing: "1px", textTransform: "uppercase", color: (product as any).featured ? "#0A0806" : product.color, cursor: "pointer", transition: "all 0.3s", whiteSpace: "nowrap" }}
+                      style={{ padding: "11px 20px", background: (product as any).featured ? "#C9A96E" : `${product.color}18`, border: `1px solid ${product.color}50`, borderRadius: "10px", fontFamily: "'Montserrat', sans-serif", fontSize: "10px", fontWeight: 800, letterSpacing: "1px", textTransform: "uppercase", color: (product as any).featured ? "#0A0806" : product.color, cursor: "pointer", transition: "all 0.3s", whiteSpace: "nowrap" }}
                       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = (product as any).featured ? "#D4B87A" : `${product.color}30`; }}
                       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = (product as any).featured ? "#C9A96E" : `${product.color}18`; }}
                     >
-                      Commander →
+                      Nous Contacter →
                     </button>
                   </div>
                 </div>
