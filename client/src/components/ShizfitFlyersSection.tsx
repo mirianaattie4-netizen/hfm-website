@@ -30,7 +30,7 @@ export default function ShizfitFlyersSection() {
         </h2>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
           <a
-            href="/flyers/index.html"
+            href="/flyers"
             target="_blank"
             rel="noopener noreferrer"
             style={{
