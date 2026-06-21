@@ -25,9 +25,26 @@ export default function ShizfitFlyersSection() {
         <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px", letterSpacing: "4px", textTransform: "uppercase", color: "#C9A96E", marginBottom: "12px" }}>
           Événement à venir
         </div>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(32px, 5vw, 52px)", color: "#FAF6EE", fontWeight: 700, lineHeight: 1.1 }}>
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(32px, 5vw, 52px)", color: "#FAF6EE", fontWeight: 700, lineHeight: 1.1, marginBottom: "24px" }}>
           Summer Fitness Social
         </h2>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a
+            href="/flyers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex", alignItems: "center", gap: "8px",
+              fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: "12px",
+              letterSpacing: "2px", textTransform: "uppercase", textDecoration: "none",
+              background: "#C9A96E", color: "#0A0806",
+              padding: "12px 24px", borderRadius: "8px",
+              transition: "background .2s",
+            }}
+          >
+            ✏️ Modifier & Télécharger PDF
+          </a>
+        </div>
       </div>
 
       {/* Flyers wrapper — scroll horizontally on small screens */}
