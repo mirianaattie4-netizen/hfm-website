@@ -151,10 +151,131 @@ function Flyer2({ c, scale = 1 }: { c: Config; scale?: number }) {
   );
 }
 
+// ── FLYER 3 — PLACES LIMITÉES ────────────────────────────────────────────────
+function Flyer3({ c, scale = 1 }: { c: Config; scale?: number }) {
+  return (
+    <div style={{ position: "relative", width: 1080, height: 1350, borderRadius: 6, overflow: "hidden", transform: `scale(${scale})`, transformOrigin: "top left", background: "#0e0a07" }}>
+      {/* BG collage: 3 photos */}
+      <img src="/villa3.jpg" alt="" style={{ position: "absolute", inset: 0, width: "100%", height: "70%", objectFit: "cover", objectPosition: "50% 40%", display: "block" }} />
+      <img src="/villa1.jpg" alt="" style={{ position: "absolute", bottom: 0, left: 0, width: "50%", height: "32%", objectFit: "cover", objectPosition: "50% 60%", display: "block" }} />
+      <img src="/villa2.jpg" alt="" style={{ position: "absolute", bottom: 0, right: 0, width: "50%", height: "32%", objectFit: "cover", objectPosition: "50% 50%", display: "block" }} />
+      {/* dark overlays */}
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,.15) 0%, rgba(0,0,0,.7) 55%, rgba(0,0,0,.85) 100%)" }} />
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "34%", background: "linear-gradient(to bottom, transparent, rgba(0,0,0,.6))" }} />
+      {/* separator line between photos */}
+      <div style={{ position: "absolute", bottom: "32%", left: 0, right: 0, height: 4, background: c.col1 }} />
+      <div style={{ position: "absolute", bottom: 0, left: "50%", width: 4, height: "32%", background: c.col1 }} />
+
+      {/* content */}
+      <div style={{ position: "absolute", inset: 0, padding: "60px 64px 56px", display: "flex", flexDirection: "column", zIndex: 2 }}>
+        {/* top brand */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ font: "700 32px/1 'Cormorant Garamond',serif", letterSpacing: 5, color: "#FAF6EE" }}>SHIZ'FIT</div>
+          <div style={{ font: "700 13px/1 'Archivo',sans-serif", letterSpacing: 3, color: c.col1, border: `1.5px solid ${c.col1}`, borderRadius: 100, padding: "8px 18px" }}>PRÉSENTE</div>
+        </div>
+
+        {/* main message */}
+        <div style={{ marginTop: "auto", marginBottom: 40 }}>
+          {/* urgency badge */}
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: c.col1, borderRadius: 100, padding: "10px 22px", marginBottom: 28 }}>
+            <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#fff", flexShrink: 0 }} />
+            <span style={{ font: "800 18px/1 'Archivo',sans-serif", letterSpacing: 3, color: "#0e0a07", textTransform: "uppercase" }}>ATTENTION</span>
+          </div>
+
+          <div style={{ font: "900 130px/.85 'Archivo Black','Archivo',sans-serif", letterSpacing: -3, color: "#FAF6EE", textTransform: "uppercase", lineHeight: .85 }}>PLACES</div>
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 8 }}>
+            <div style={{ font: "900 100px/.85 'Archivo Black','Archivo',sans-serif", letterSpacing: -2, color: c.col1, textTransform: "uppercase" }}>LIMI-</div>
+          </div>
+          <div style={{ font: "900 100px/.85 'Archivo Black','Archivo',sans-serif", letterSpacing: -2, color: c.col1, textTransform: "uppercase" }}>TÉES</div>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 36 }}>
+            <div style={{ height: 2, flex: 1, background: "rgba(255,255,255,.2)" }} />
+            <div style={{ font: "700 18px/1 'Archivo',sans-serif", letterSpacing: 3, color: "rgba(255,255,255,.7)", textTransform: "uppercase" }}>Réserve ta place maintenant</div>
+            <div style={{ height: 2, flex: 1, background: "rgba(255,255,255,.2)" }} />
+          </div>
+        </div>
+
+        {/* event info bar */}
+        <div style={{ background: "rgba(255,255,255,.08)", backdropFilter: "blur(8px)", borderRadius: 20, border: "1px solid rgba(255,255,255,.12)", padding: "24px 32px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
+          <div>
+            <div style={{ font: "600 12px/1 'Archivo',sans-serif", letterSpacing: 3, color: c.col1, textTransform: "uppercase", marginBottom: 8 }}>Date</div>
+            <div style={{ font: "800 26px/1 'Archivo',sans-serif", color: "#FAF6EE" }}>{c.date}</div>
+          </div>
+          <div style={{ width: 1, height: 40, background: "rgba(255,255,255,.2)" }} />
+          <div>
+            <div style={{ font: "600 12px/1 'Archivo',sans-serif", letterSpacing: 3, color: c.col1, textTransform: "uppercase", marginBottom: 8 }}>Horaires</div>
+            <div style={{ font: "800 26px/1 'Archivo',sans-serif", color: "#FAF6EE" }}>{c.hours}</div>
+          </div>
+          <div style={{ width: 1, height: 40, background: "rgba(255,255,255,.2)" }} />
+          <div>
+            <div style={{ font: "600 12px/1 'Archivo',sans-serif", letterSpacing: 3, color: c.col1, textTransform: "uppercase", marginBottom: 8 }}>Lieu</div>
+            <div style={{ font: "800 20px/1.2 'Archivo',sans-serif", color: "#FAF6EE" }}>{c.lieu}<br /><span style={{ fontWeight: 500, fontSize: 14, color: "rgba(255,255,255,.6)" }}>{c.quartier}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── FLYER 4 — 1 BAWL ─────────────────────────────────────────────────────────
+function Flyer4({ c, scale = 1 }: { c: Config; scale?: number }) {
+  return (
+    <div style={{ position: "relative", width: 1080, height: 1350, borderRadius: 6, overflow: "hidden", transform: `scale(${scale})`, transformOrigin: "top left", background: "#0e0a07" }}>
+      {/* BG: pool photo full */}
+      <img src="/villa2.jpg" alt="" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 40%", display: "block" }} />
+      {/* dark gradient overlay */}
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(160deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.75) 100%)" }} />
+
+      {/* decorative circle */}
+      <div style={{ position: "absolute", right: -160, top: -160, width: 600, height: 600, borderRadius: "50%", border: `3px solid ${c.col1}30` }} />
+      <div style={{ position: "absolute", right: -100, top: -100, width: 450, height: 450, borderRadius: "50%", border: `2px solid ${c.col1}20` }} />
+
+      {/* content */}
+      <div style={{ position: "absolute", inset: 0, padding: "60px 64px 56px", display: "flex", flexDirection: "column", zIndex: 2 }}>
+        {/* top */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ font: "700 32px/1 'Cormorant Garamond',serif", letterSpacing: 5, color: "#FAF6EE" }}>SHIZ'FIT</div>
+          <div style={{ background: c.col1, color: "#0e0a07", font: "800 13px/1 'Archivo',sans-serif", letterSpacing: 3, padding: "10px 18px", borderRadius: 100, textTransform: "uppercase" }}>Summer Social</div>
+        </div>
+
+        {/* headline */}
+        <div style={{ marginTop: 60 }}>
+          <div style={{ font: "600 22px/1 'Archivo',sans-serif", letterSpacing: 5, color: "rgba(255,255,255,.6)", textTransform: "uppercase", marginBottom: 16 }}>Participation</div>
+          <div style={{ font: "900 260px/.8 'Archivo Black','Archivo',sans-serif", letterSpacing: -8, color: "#FAF6EE", textTransform: "uppercase", lineHeight: .8 }}>1</div>
+          <div style={{ display: "inline-block", background: c.col1, color: "#0e0a07", font: "900 110px/1 'Archivo Black','Archivo',sans-serif", letterSpacing: 2, textTransform: "uppercase", padding: "12px 32px", transform: "rotate(-2deg)", marginTop: -10, boxShadow: `0 20px 50px ${c.col1}60` }}>BAWL</div>
+          <div style={{ font: "600 20px/1 'Archivo',sans-serif", letterSpacing: 3, color: "rgba(255,255,255,.55)", textTransform: "uppercase", marginTop: 28 }}>= 1 000 FCFA seulement</div>
+        </div>
+
+        {/* perks */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 56 }}>
+          {[`${c.c1name} avec ${c.p1name}`, `${c.c2name} avec ${c.p2name}`, "Accès piscine & jardin", "Ambiance premium"].map((perk, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 16 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", background: c.col1, flexShrink: 0 }} />
+              <span style={{ font: "700 22px/1 'Archivo',sans-serif", color: "rgba(255,255,255,.85)", letterSpacing: 1 }}>{perk}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* footer */}
+        <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: 16 }}>
+          <div style={{ height: 1, background: "rgba(255,255,255,.15)" }} />
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
+            <div>
+              <div style={{ font: "800 28px/1 'Archivo',sans-serif", color: "#FAF6EE" }}>{c.date} · {c.hours}</div>
+              <div style={{ font: "600 16px/1 'Archivo',sans-serif", color: "rgba(255,255,255,.5)", letterSpacing: 2, marginTop: 8, textTransform: "uppercase" }}>{c.lieu} · {c.quartier}</div>
+            </div>
+            <div style={{ background: c.col1, color: "#0e0a07", font: "900 18px/1 'Archivo',sans-serif", letterSpacing: 2, padding: "14px 28px", borderRadius: 100, textTransform: "uppercase", boxShadow: `0 10px 30px ${c.col1}50` }}>Places limitées !</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function FlyersPage() {
   const [c, setC] = useState<Config>({ ...INIT });
   const [editOpen, setEditOpen] = useState(false);
-  const [printFlyer, setPrintFlyer] = useState<1 | 2 | "both">("both");
+  const [printFlyer, setPrintFlyer] = useState<number | "all">("all");
   const styleRef = useRef<HTMLStyleElement | null>(null);
 
   useEffect(() => {
@@ -162,9 +283,9 @@ export default function FlyersPage() {
     s.textContent = `
       @keyframes drift { 0%,100%{ transform:translate(0,0) rotate(0deg); } 50%{ transform:translate(0,-10px) rotate(3deg); } }
       @media print {
-        #flyers-toolbar, #flyers-edit, #flyers-labels { display:none!important; }
+        #flyers-toolbar, #flyers-edit, .flyer-label-tag { display:none!important; }
         body { background:#fff!important; }
-        #flyer1-wrap, #flyer2-wrap { page-break-after: always; }
+        .flyer-print-wrap { page-break-after: always; }
         *, *::before, *::after { print-color-adjust:exact!important; -webkit-print-color-adjust:exact!important; animation:none!important; }
       }
     `;
@@ -177,23 +298,32 @@ export default function FlyersPage() {
     setC((prev) => ({ ...prev, [id]: val }));
   }
 
-  function downloadPDF(which: 1 | 2 | "both") {
+  function downloadPDF(which: number | "all") {
     setPrintFlyer(which);
-    setTimeout(() => window.print(), 100);
+    setTimeout(() => window.print(), 150);
   }
 
   const SCALE = 0.42;
+
+  const flyers = [
+    { id: 1, label: "Flyer 1 — Événement", el: <Flyer1 c={c} scale={SCALE} /> },
+    { id: 2, label: "Flyer 2 — Coaches",   el: <Flyer2 c={c} scale={SCALE} /> },
+    { id: 3, label: "Flyer 3 — Places Limitées", el: <Flyer3 c={c} scale={SCALE} /> },
+    { id: 4, label: "Flyer 4 — 1 Bawl",    el: <Flyer4 c={c} scale={SCALE} /> },
+  ];
 
   return (
     <div style={{ background: "#0e0a07", minHeight: "100vh", fontFamily: "'Montserrat',sans-serif", color: "#FAF6EE" }}>
 
       {/* TOOLBAR */}
-      <div id="flyers-toolbar" style={{ position: "sticky", top: 0, zIndex: 100, background: "rgba(14,10,7,.96)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(201,169,110,.15)", padding: "14px 24px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+      <div id="flyers-toolbar" style={{ position: "sticky", top: 0, zIndex: 100, background: "rgba(14,10,7,.96)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(201,169,110,.15)", padding: "12px 24px", display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" }}>
         <a href="/" style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, letterSpacing: 4, color: "#C9A96E", textDecoration: "none", marginRight: "auto" }}>SHIZ'FIT</a>
         <Btn ghost onClick={() => setEditOpen((o) => !o)}>{editOpen ? "✕ Fermer" : "✏️ Modifier"}</Btn>
-        <Btn onClick={() => downloadPDF(1)}>⬇ Flyer 1 PDF</Btn>
-        <Btn onClick={() => downloadPDF(2)}>⬇ Flyer 2 PDF</Btn>
-        <Btn gold onClick={() => downloadPDF("both")}>⬇ Les 2 PDF</Btn>
+        <Btn onClick={() => downloadPDF(1)}>⬇ F1</Btn>
+        <Btn onClick={() => downloadPDF(2)}>⬇ F2</Btn>
+        <Btn onClick={() => downloadPDF(3)}>⬇ F3</Btn>
+        <Btn onClick={() => downloadPDF(4)}>⬇ F4</Btn>
+        <Btn gold onClick={() => downloadPDF("all")}>⬇ Tous PDF</Btn>
       </div>
 
       {/* EDIT PANEL */}
@@ -228,22 +358,19 @@ export default function FlyersPage() {
       )}
 
       {/* FLYERS */}
-      <div style={{ padding: "48px 24px", display: "flex", gap: "48px", justifyContent: "center", flexWrap: "wrap" }}>
-
-        <div id="flyer1-wrap" style={{ display: printFlyer === 2 ? "none" : "flex", flexDirection: "column", gap: 12 }}>
-          <div id="flyers-labels" style={{ fontSize: 10, letterSpacing: "2.5px", textTransform: "uppercase", color: "rgba(201,169,110,.45)" }}>Flyer 1 — Événement</div>
-          <div style={{ width: 1080 * SCALE, height: 1350 * SCALE, position: "relative", overflow: "hidden", borderRadius: 4, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }}>
-            <Flyer1 c={c} scale={SCALE} />
+      <div style={{ padding: "48px 24px", display: "flex", gap: "40px", justifyContent: "center", flexWrap: "wrap" }}>
+        {flyers.map((f) => (
+          <div
+            key={f.id}
+            className="flyer-print-wrap"
+            style={{ display: printFlyer !== "all" && printFlyer !== f.id ? "none" : "flex", flexDirection: "column", gap: 12 }}
+          >
+            <div className="flyer-label-tag" style={{ fontSize: 10, letterSpacing: "2.5px", textTransform: "uppercase", color: "rgba(201,169,110,.45)" }}>{f.label}</div>
+            <div style={{ width: 1080 * SCALE, height: 1350 * SCALE, position: "relative", overflow: "hidden", borderRadius: 4, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }}>
+              {f.el}
+            </div>
           </div>
-        </div>
-
-        <div id="flyer2-wrap" style={{ display: printFlyer === 1 ? "none" : "flex", flexDirection: "column", gap: 12 }}>
-          <div id="flyers-labels" style={{ fontSize: 10, letterSpacing: "2.5px", textTransform: "uppercase", color: "rgba(201,169,110,.45)" }}>Flyer 2 — Coaches</div>
-          <div style={{ width: 1080 * SCALE, height: 1350 * SCALE, position: "relative", overflow: "hidden", borderRadius: 4, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }}>
-            <Flyer2 c={c} scale={SCALE} />
-          </div>
-        </div>
-
+        ))}
       </div>
     </div>
   );
