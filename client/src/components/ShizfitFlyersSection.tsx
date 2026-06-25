@@ -107,7 +107,7 @@ export default function ShizfitFlyersSection() {
 
                 {/* date pill */}
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "auto" }}>
-                  <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: "12px", letterSpacing: "1px", color: "#fff3e6", background: "rgba(28,20,13,.92)", padding: "6px 12px", borderRadius: "100px" }}>SAM. 27 JUIN</div>
+                  <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: "12px", letterSpacing: "1px", color: "#fff3e6", background: "rgba(28,20,13,.92)", padding: "6px 12px", borderRadius: "100px" }}>SAM. 4 JUILLET</div>
                   <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: "11px", color: "#1c140d" }}>09:30 — 11:30</div>
                 </div>
 
@@ -212,7 +212,7 @@ export default function ShizfitFlyersSection() {
 
                 {/* footer */}
                 <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
-                  <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 900, fontSize: "11px", letterSpacing: "1px", color: "#1c140d", background: "#fff3e6", padding: "6px 14px", borderRadius: "100px", transform: "rotate(-1.5deg)", boxShadow: "0 8px 18px rgba(0,0,0,.2)" }}>SAM. 27 JUIN · 10:00 — 11:35</div>
+                  <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 900, fontSize: "11px", letterSpacing: "1px", color: "#1c140d", background: "#fff3e6", padding: "6px 14px", borderRadius: "100px", transform: "rotate(-1.5deg)", boxShadow: "0 8px 18px rgba(0,0,0,.2)" }}>SAM. 4 JUILLET · 10:00 — 11:35</div>
                   <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 600, fontSize: "8px", letterSpacing: "1.5px", color: "rgba(28,20,13,.7)" }}>VILLA DU BIEN-ÊTRE · ANGRÉ 7ÈME TRANCHE</div>
                 </div>
               </div>

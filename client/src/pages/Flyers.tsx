@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const INIT = {
-  date: "SAM. 27 JUIN",
+  date: "SAM. 4 JUILLET",
   hours: "09:30 — 11:30",
   lieu: "VILLA DU BIEN-ÊTRE",
   quartier: "ANGRÉ 7ÈME TRANCHE",
