@@ -11,6 +11,7 @@ import HistoireSection from "@/components/HistoireSection";
 import GalerieSection from "@/components/GalerieSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import EntreprisesSection from "@/components/EntreprisesSection";
+import ShizfitFlyersSection from "@/components/ShizfitFlyersSection";
 import DigitalSection from "@/components/DigitalSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import TarifsSection from "@/components/TarifsSection";
@@ -26,6 +27,7 @@ export default function Home() {
       <HistoireSection />
       <GalerieSection />
       <ProgrammesSection />
+      <ShizfitFlyersSection />
       <EntreprisesSection />
       <DigitalSection />
       <TestimonialsSection />

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHIZ'FIT — Flyers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Black&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body { font-family: 'Montserrat', sans-serif; background: #0e0a07; color: #FAF6EE; min-height: 100vh; }
+
+  @keyframes floaty { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-14px); } }
+  @keyframes drift { 0%,100%{ transform:translate(0,0) rotate(0deg); } 50%{ transform:translate(0,-10px) rotate(3deg); } }
+
+  /* ── TOOLBAR ── */
+  #toolbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,10,7,.95); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,169,110,.15);
+    padding: 14px 32px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  #toolbar .logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 4px; color: #C9A96E; margin-right: auto; }
+  #toolbar button {
+    font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1.5px;
+    text-transform: uppercase; border: none; border-radius: 8px; padding: 10px 20px; cursor: pointer;
+    transition: all .2s;
+  }
+  #btn-edit   { background: rgba(201,169,110,.15); color: #C9A96E; border: 1px solid rgba(201,169,110,.3); }
+  #btn-edit:hover { background: rgba(201,169,110,.25); }
+  #btn-pdf    { background: #C9A96E; color: #0e0a07; }
+  #btn-pdf:hover { background: #e0c07a; }
+
+  /* ── EDIT PANEL ── */
+  #edit-panel {
+    display: none;
+    background: #1a1208; border-bottom: 1px solid rgba(201,169,110,.1);
+    padding: 24px 32px;
+    gap: 24px; flex-wrap: wrap; align-items: flex-start;
+  }
+  #edit-panel.open { display: flex; }
+  .edit-group { display: flex; flex-direction: column; gap: 6px; min-width: 160px; }
+  .edit-group label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #C9A96E; }
+  .edit-group input, .edit-group select {
+    background: rgba(255,255,255,.07); border: 1px solid rgba(201,169,110,.2);
+    border-radius: 6px; color: #FAF6EE; font-family: 'Montserrat', sans-serif;
+    font-size: 13px; padding: 8px 10px; outline: none; width: 100%;
+    transition: border-color .2s;
+  }
+  .edit-group input:focus, .edit-group select:focus { border-color: #C9A96E; }
+  .edit-group input[type=color] { padding: 2px 4px; height: 36px; cursor: pointer; }
+  .edit-section-title { width: 100%; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: rgba(201,169,110,.5); padding-top: 8px; border-top: 1px solid rgba(201,169,110,.08); }
+
+  /* ── CANVAS ── */
+  #canvas {
+    padding: 56px 32px;
+    display: flex; gap: 56px; justify-content: center; flex-wrap: wrap;
+  }
+  .flyer-wrap { display: flex; flex-direction: column; gap: 12px; }
+  .flyer-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(201,169,110,.5); }
+  .flyer-dl {
+    align-self: flex-start;
+    background: rgba(201,169,110,.1); border: 1px solid rgba(201,169,110,.2);
+    color: #C9A96E; font-family: 'Montserrat', sans-serif; font-size: 10px;
+    font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 7px 14px; border-radius: 6px; cursor: pointer;
+    display: flex; align-items: center; gap: 6px; transition: all .2s;
+  }
+  .flyer-dl:hover { background: rgba(201,169,110,.2); }
+
+  /* ══════════════════════════════════════════
+     FLYER 1 — EVENT (1080×1350, scaled ×.5)
+  ══════════════════════════════════════════ */
+  .flyer-scale { transform-origin: top left; transform: scale(.5); }
+  .flyer-1 {
+    position: relative; width: 1080px; height: 1350px;
+    border-radius: 6px; overflow: hidden;
+    box-shadow: 0 22px 60px rgba(0,0,0,.55);
+  }
+  /* ══════════════════════════════════════════
+     FLYER 2 — COACHES (1080×1350, scaled ×.5)
+  ══════════════════════════════════════════ */
+  .flyer-2 {
+    position: relative; width: 1080px; height: 1350px;
+    border-radius: 6px; overflow: hidden;
+    box-shadow: 0 22px 60px rgba(0,0,0,.55);
+  }
+
+  /* spacer for scaled flyers */
+  .flyer-sizer { width: 540px; height: 675px; position: relative; overflow: hidden; border-radius: 3px; }
+  .flyer-sizer > div { transform-origin: top left; transform: scale(.5); }
+
+  /* ── PRINT ── */
+  @media print {
+    #toolbar, #edit-panel, .flyer-label, .flyer-dl { display: none !important; }
+    body { background: white; }
+    #canvas { padding: 0; gap: 0; flex-direction: column; align-items: center; }
+    .flyer-wrap { break-inside: avoid; page-break-after: always; }
+    .flyer-sizer { width: 1080px; height: 1350px; transform: none; }
+    .flyer-sizer > div { transform: none; }
+    *, *::before, *::after {
+      print-color-adjust: exact; -webkit-print-color-adjust: exact;
+      animation: none !important; transition: none !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── TOOLBAR ── -->
+<div id="toolbar">
+  <div class="logo">SHIZ'FIT</div>
+  <button id="btn-edit" onclick="toggleEdit()">✏️ Modifier le design</button>
+  <button id="btn-pdf" onclick="window.print()">⬇ Télécharger PDF</button>
+</div>
+
+<!-- ── EDIT PANEL ── -->
+<div id="edit-panel">
+  <div class="edit-section-title">Événement</div>
+
+  <div class="edit-group">
+    <label>Date</label>
+    <input type="text" id="e-date" value="SAM. 27 JUIN" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Horaires (global)</label>
+    <input type="text" id="e-hours" value="09:30 — 11:30" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Lieu</label>
+    <input type="text" id="e-lieu" value="VILLA DU BIEN-ÊTRE" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Quartier</label>
+    <input type="text" id="e-quartier" value="ANGRÉ 7ÈME TRANCHE" oninput="update()">
+  </div>
+
+  <div class="edit-section-title">Cours</div>
+
+  <div class="edit-group">
+    <label>Cours 1 — Nom</label>
+    <input type="text" id="e-c1name" value="SCULPT" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Cours 1 — Heure</label>
+    <input type="text" id="e-c1time" value="10:00" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Cours 1 — Fin</label>
+    <input type="text" id="e-c1end" value="10:45" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Cours 1 — Desc</label>
+    <input type="text" id="e-c1desc" value="Tonifier et sculpter l'ensemble du corps" oninput="update()">
+  </div>
+
+  <div class="edit-group">
+    <label>Cours 2 — Nom</label>
+    <input type="text" id="e-c2name" value="PILATES" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Cours 2 — Heure</label>
+    <input type="text" id="e-c2time" value="11:00" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Cours 2 — Fin</label>
+    <input type="text" id="e-c2end" value="11:35" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Cours 2 — Desc</label>
+    <input type="text" id="e-c2desc" value="Renforcer le tronc et améliorer la posture" oninput="update()">
+  </div>
+
+  <div class="edit-section-title">Coaches</div>
+
+  <div class="edit-group">
+    <label>Coach 1 — Nom</label>
+    <input type="text" id="e-p1name" value="SHIZ" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Coach 1 — @</label>
+    <input type="text" id="e-p1handle" value="@shizfit_" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Coach 2 — Nom</label>
+    <input type="text" id="e-p2name" value="MIMI" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Coach 2 — @</label>
+    <input type="text" id="e-p2handle" value="@coachmimi87" oninput="update()">
+  </div>
+
+  <div class="edit-section-title">Couleurs</div>
+
+  <div class="edit-group">
+    <label>Couleur principale</label>
+    <input type="color" id="e-col1" value="#ff8a4c" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Couleur secondaire</label>
+    <input type="color" id="e-col2" value="#d94f2c" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Couleur foncée</label>
+    <input type="color" id="e-dark" value="#1c140d" oninput="update()">
+  </div>
+  <div class="edit-group">
+    <label>Couleur claire</label>
+    <input type="color" id="e-light" value="#fff3e6" oninput="update()">
+  </div>
+</div>
+
+<!-- ── CANVAS ── -->
+<div id="canvas">
+
+  <!-- FLYER 1 -->
+  <div class="flyer-wrap">
+    <div class="flyer-label">Flyer 1 — Événement</div>
+    <div class="flyer-sizer">
+      <div id="flyer1-root"><!-- rendered by JS --></div>
+    </div>
+    <button class="flyer-dl" onclick="printFlyer(1)">⬇ PDF Flyer 1</button>
+  </div>
+
+  <!-- FLYER 2 -->
+  <div class="flyer-wrap">
+    <div class="flyer-label">Flyer 2 — Coaches</div>
+    <div class="flyer-sizer">
+      <div id="flyer2-root"><!-- rendered by JS --></div>
+    </div>
+    <button class="flyer-dl" onclick="printFlyer(2)">⬇ PDF Flyer 2</button>
+  </div>
+
+</div>
+
+<script>
+// ── helpers ──────────────────────────────────────────────
+function v(id){ return document.getElementById(id).value; }
+function toggleEdit(){
+  const p = document.getElementById('edit-panel');
+  p.classList.toggle('open');
+  document.getElementById('btn-edit').textContent = p.classList.contains('open') ? '✕ Fermer' : '✏️ Modifier le design';
+}
+
+// ── render ───────────────────────────────────────────────
+function update(){
+  const col1  = v('e-col1');
+  const col2  = v('e-col2');
+  const dark  = v('e-dark');
+  const light = v('e-light');
+  const date      = v('e-date');
+  const hours     = v('e-hours');
+  const lieu      = v('e-lieu');
+  const quartier  = v('e-quartier');
+  const c1name  = v('e-c1name');
+  const c1time  = v('e-c1time');
+  const c1end   = v('e-c1end');
+  const c1desc  = v('e-c1desc');
+  const c2name  = v('e-c2name');
+  const c2time  = v('e-c2time');
+  const c2end   = v('e-c2end');
+  const c2desc  = v('e-c2desc');
+  const p1name   = v('e-p1name');
+  const p1handle = v('e-p1handle');
+  const p2name   = v('e-p2name');
+  const p2handle = v('e-p2handle');
+
+  const bg = `radial-gradient(130% 80% at 78% 8%, #ffd9a8 0%, rgba(255,217,168,0) 48%), linear-gradient(155deg, ${col1} 0%, ${col2} 60%, ${col2} 100%)`;
+
+  // ── FLYER 1 ──────────────────────────────────────────
+  document.getElementById('flyer1-root').innerHTML = `
+  <div style="position:relative;width:1080px;height:1350px;border-radius:6px;overflow:hidden;background:${bg};">
+    <div style="position:absolute;width:760px;height:760px;right:-280px;top:-220px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(255,225,180,.9),rgba(255,225,180,0) 68%);animation:drift 9s ease-in-out infinite;"></div>
+    <div style="position:absolute;width:520px;height:520px;left:-200px;bottom:-160px;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(120,40,20,.5),rgba(120,40,20,0) 70%);animation:drift 11s ease-in-out infinite reverse;"></div>
+    <div style="position:absolute;left:-120px;right:-120px;top:560px;height:240px;background:${dark};transform:rotate(-9deg);box-shadow:0 20px 50px rgba(0,0,0,.35);"></div>
+    <div style="position:absolute;left:-120px;right:-120px;top:560px;height:240px;transform:rotate(-9deg);display:flex;align-items:center;justify-content:center;overflow:hidden;">
+      <div style="white-space:nowrap;font:900 90px/1 'Archivo Black','Archivo',sans-serif;letter-spacing:6px;color:${col1}29;text-transform:uppercase;">MOVE · SWEAT · GLOW · MOVE · SWEAT · GLOW ·</div>
+    </div>
+    <div style="position:absolute;inset:0;padding:70px 70px 64px;display:flex;flex-direction:column;z-index:2;">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="font:700 30px/1 'Cormorant Garamond',serif;letter-spacing:4px;color:${dark};">SHIZ'FIT</div>
+        <div style="font:700 12px/1 'Archivo',sans-serif;letter-spacing:3px;color:${dark}99;border:1.5px solid ${dark}80;border-radius:100px;padding:8px 16px;">PRÉSENTE</div>
+      </div>
+      <div style="margin-top:30px;">
+        <div style="font:800 30px/1 'Archivo',sans-serif;letter-spacing:6px;color:${light};text-transform:uppercase;margin-left:6px;">SUMMER</div>
+        <h1 style="font:900 168px/.82 'Archivo Black','Archivo',sans-serif;letter-spacing:-4px;color:${dark};text-transform:uppercase;margin-top:6px;">FITNESS</h1>
+        <div style="display:inline-block;background:${dark};color:${col1};font:900 70px/1 'Archivo Black','Archivo',sans-serif;letter-spacing:2px;text-transform:uppercase;padding:10px 26px;transform:rotate(-3deg);margin-top:10px;box-shadow:0 14px 30px rgba(0,0,0,.3);">SOCIAL</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;margin-top:auto;">
+        <div style="font:800 34px/1 'Archivo',sans-serif;letter-spacing:1px;color:${light};background:${dark}eb;padding:16px 28px;border-radius:100px;">${date}</div>
+        <div style="font:800 26px/1 'Archivo',sans-serif;letter-spacing:1px;color:${dark};">${hours}</div>
+      </div>
+      <div style="display:flex;gap:20px;margin-top:30px;">
+        <div style="flex:1;background:${light}eb;border-radius:24px;padding:26px 28px;transform:rotate(-1.5deg);box-shadow:0 16px 34px rgba(0,0,0,.2);">
+          <div style="display:flex;align-items:baseline;gap:12px;">
+            <span style="font:900 50px/1 'Archivo Black','Archivo',sans-serif;color:${col2};">${c1time}</span>
+            <span style="font:800 26px/1 'Archivo',sans-serif;letter-spacing:1px;color:${dark};">${c1name}</span>
+          </div>
+          <p style="font:600 16px/1.4 'Archivo',sans-serif;color:${dark}aa;text-transform:uppercase;letter-spacing:.5px;margin-top:14px;">${c1desc}</p>
+        </div>
+        <div style="flex:1;background:${light}eb;border-radius:24px;padding:26px 28px;transform:rotate(1.5deg);box-shadow:0 16px 34px rgba(0,0,0,.2);">
+          <div style="display:flex;align-items:baseline;gap:12px;">
+            <span style="font:900 50px/1 'Archivo Black','Archivo',sans-serif;color:${col2};">${c2time}</span>
+            <span style="font:800 26px/1 'Archivo',sans-serif;letter-spacing:1px;color:${dark};">${c2name}</span>
+          </div>
+          <p style="font:600 16px/1.4 'Archivo',sans-serif;color:${dark}aa;text-transform:uppercase;letter-spacing:.5px;margin-top:14px;">${c2desc}</p>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:30px;">
+        <span style="width:9px;height:9px;border-radius:50%;background:${dark};"></span>
+        <div style="font:800 20px/1 'Archivo',sans-serif;letter-spacing:2px;color:${dark};">${lieu}</div>
+        <span style="font:600 16px/1 'Archivo',sans-serif;letter-spacing:2px;color:${dark}99;">· ${quartier}</span>
+      </div>
+    </div>
+  </div>`;
+
+  // ── FLYER 2 ──────────────────────────────────────────
+  const bg2 = `radial-gradient(130% 75% at 22% 6%, #ffd9a8 0%, rgba(255,217,168,0) 46%), linear-gradient(155deg, ${col1} 0%, ${col2} 42%, ${col2} 100%)`;
+  document.getElementById('flyer2-root').innerHTML = `
+  <div style="position:relative;width:1080px;height:1350px;border-radius:6px;overflow:hidden;background:${bg2};">
+    <div style="position:absolute;width:680px;height:680px;left:-240px;top:-200px;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(255,225,180,.85),rgba(255,225,180,0) 68%);animation:drift 10s ease-in-out infinite;"></div>
+    <div style="position:absolute;width:520px;height:520px;right:-180px;bottom:-160px;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(120,40,20,.45),rgba(120,40,20,0) 70%);animation:drift 12s ease-in-out infinite reverse;"></div>
+    <div style="position:absolute;inset:0;padding:64px 60px 56px;display:flex;flex-direction:column;z-index:2;">
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;">
+        <span style="width:46px;height:2px;background:${dark}80;"></span>
+        <div style="font:700 36px/1 'Cormorant Garamond',serif;letter-spacing:5px;color:${dark};">SHIZ'FIT</div>
+        <span style="width:46px;height:2px;background:${dark}80;"></span>
+      </div>
+      <div style="text-align:center;margin-top:22px;">
+        <span style="display:block;font:800 30px/1 'Archivo',sans-serif;letter-spacing:4px;color:${light};text-transform:uppercase;">À LA RENCONTRE DE</span>
+        <span style="display:inline-block;font:900 78px/1 'Archivo Black','Archivo',sans-serif;letter-spacing:-1px;color:${dark};text-transform:uppercase;background:${light};padding:6px 24px;transform:rotate(-2deg);margin-top:12px;box-shadow:0 12px 28px rgba(0,0,0,.22);">TES COACH</span>
+      </div>
+      <div style="display:flex;gap:30px;margin-top:48px;">
+        <div style="flex:1;background:#fffaf3;border-radius:28px;overflow:hidden;box-shadow:0 22px 44px rgba(0,0,0,.28);transform:rotate(-2deg);">
+          <div style="position:relative;height:540px;overflow:hidden;">
+            <img src="assets/shiz.jpg" alt="${p1name}" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block;">
+            <div style="position:absolute;left:18px;top:18px;background:${dark};color:${col1};font:900 22px/1 'Archivo',sans-serif;letter-spacing:2px;padding:9px 16px;border-radius:100px;">${c1name}</div>
+          </div>
+          <div style="padding:24px 26px 28px;">
+            <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
+              <span style="font:900 40px/1 'Archivo Black','Archivo',sans-serif;color:${dark};">${p1name}</span>
+              <span style="font:600 16px/1 'Archivo',sans-serif;letter-spacing:.5px;color:${dark}80;">${p1handle}</span>
+            </div>
+            <div style="font:900 30px/1 'Archivo Black','Archivo',sans-serif;color:${col2};margin-top:12px;">${c1time} — ${c1end}</div>
+          </div>
+        </div>
+        <div style="flex:1;background:#fffaf3;border-radius:28px;overflow:hidden;box-shadow:0 22px 44px rgba(0,0,0,.28);transform:rotate(2deg);">
+          <div style="position:relative;height:540px;overflow:hidden;">
+            <img src="assets/mimi.jpg" alt="${p2name}" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block;">
+            <div style="position:absolute;left:18px;top:18px;background:${dark};color:${col1};font:900 22px/1 'Archivo',sans-serif;letter-spacing:2px;padding:9px 16px;border-radius:100px;">${c2name}</div>
+          </div>
+          <div style="padding:24px 26px 28px;">
+            <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
+              <span style="font:900 40px/1 'Archivo Black','Archivo',sans-serif;color:${dark};">${p2name}</span>
+              <span style="font:600 16px/1 'Archivo',sans-serif;letter-spacing:.5px;color:${dark}80;">${p2handle}</span>
+            </div>
+            <div style="font:900 30px/1 'Archivo Black','Archivo',sans-serif;color:${col2};margin-top:12px;">${c2time} — ${c2end}</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:12px;">
+        <div style="font:900 28px/1 'Archivo',sans-serif;letter-spacing:1px;color:${dark};background:${light};padding:14px 30px;border-radius:100px;transform:rotate(-1.5deg);box-shadow:0 12px 26px rgba(0,0,0,.2);">${date} · ${c1time} — ${c2end}</div>
+        <div style="font:600 16px/1 'Archivo',sans-serif;letter-spacing:2px;color:${dark}b3;">${lieu} · ${quartier}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── print single flyer ────────────────────────────────────
+function printFlyer(n){
+  // hide the other flyer, print, restore
+  const other = document.getElementById('flyer' + (n===1?2:1) + '-root').closest('.flyer-wrap');
+  other.style.display = 'none';
+  window.print();
+  other.style.display = '';
+}
+
+// initial render
+update();
+</script>
+</body>
+</html>

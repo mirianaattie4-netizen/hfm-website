@@ -18,6 +18,11 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
+  // Serve standalone flyers page
+  app.get(["/flyers", "/flyers/"], (_req, res) => {
+    res.sendFile(path.join(staticPath, "flyers", "index.html"));
+  });
+
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
