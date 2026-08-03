@@ -213,6 +213,47 @@ export default function AtelierPeinture() {
               </div>
             ))}
           </div>
+
+          <div
+            className="mt-10 rounded-xl px-6 py-8 sm:px-10 sm:py-10"
+            style={{ border: `1px solid ${RUST}`, background: "rgba(163,22,26,0.04)" }}
+          >
+            <Eyebrow>Tarif</Eyebrow>
+            <div className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
+                className="text-4xl sm:text-5xl"
+              >
+                150 000 FCFA
+              </span>
+              <span
+                style={{ fontFamily: "'Cormorant Garamond', serif", color: MUTED }}
+                className="text-lg sm:text-xl"
+              >
+                / séance de 2h, jusqu'à 15 participants
+              </span>
+            </div>
+            <p
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              className="mt-3 text-lg leading-relaxed sm:text-xl"
+            >
+              + 8 000 FCFA par participant supplémentaire, au-delà de 15 (30
+              max). Animation et matériel inclus — aucun coût caché pour
+              l'hôtel.
+            </p>
+            <p
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: 11,
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                color: MUTED,
+              }}
+              className="mt-4"
+            >
+              Tarif indicatif 2026 — devis personnalisé sur demande.
+            </p>
+          </div>
         </Slide>
       </div>
     </div>
