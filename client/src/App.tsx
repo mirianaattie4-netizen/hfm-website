@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import MobileApp from "./pages/MobileApp";
+import PeintureSport from "./pages/PeintureSport";
 
 // Detect if running as installed PWA (standalone mode) or on mobile
 function isMobileOrPWA(): boolean {
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"/"} component={mobile ? MobileApp : Home} />
       <Route path={"/app"} component={MobileApp} />
       <Route path={"/web"} component={Home} />
+      <Route path={"/peinture-sport"} component={PeintureSport} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
