@@ -224,22 +224,20 @@ export default function AtelierPeinture() {
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
                 className="text-4xl sm:text-5xl"
               >
-                150 000 FCFA
+                15 000 FCFA
               </span>
               <span
                 style={{ fontFamily: "'Cormorant Garamond', serif", color: MUTED }}
                 className="text-lg sm:text-xl"
               >
-                / séance de 2h, jusqu'à 15 participants
+                / participant
               </span>
             </div>
             <p
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
               className="mt-3 text-lg leading-relaxed sm:text-xl"
             >
-              + 8 000 FCFA par participant supplémentaire, au-delà de 15 (30
-              max). Animation et matériel inclus — aucun coût caché pour
-              l'hôtel.
+              Animation et matériel inclus — aucun coût caché pour l'hôtel.
             </p>
             <p
               style={{
