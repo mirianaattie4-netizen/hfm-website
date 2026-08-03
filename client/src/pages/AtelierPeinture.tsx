@@ -219,26 +219,103 @@ export default function AtelierPeinture() {
             style={{ border: `1px solid ${RUST}`, background: "rgba(163,22,26,0.04)" }}
           >
             <Eyebrow>Tarif</Eyebrow>
-            <div className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
-                className="text-4xl sm:text-5xl"
-              >
-                15 000 FCFA
-              </span>
-              <span
-                style={{ fontFamily: "'Cormorant Garamond', serif", color: MUTED }}
-                className="text-lg sm:text-xl"
-              >
-                / participant
-              </span>
+
+            <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
+              <div>
+                <span
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: "0.14em",
+                    textTransform: "uppercase",
+                    color: MUTED,
+                  }}
+                >
+                  Samedi — Peinture
+                </span>
+                <div className="mt-3 flex flex-col gap-2">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-lg sm:text-xl">
+                      Adulte <em style={{ color: MUTED, fontStyle: "normal" }}>(drink offert)</em>
+                    </span>
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }} className="text-xl sm:text-2xl whitespace-nowrap">
+                      10 000 F
+                    </span>
+                  </div>
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-lg sm:text-xl">
+                      Enfant
+                    </span>
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }} className="text-xl sm:text-2xl whitespace-nowrap">
+                      6 000 F
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: "0.14em",
+                    textTransform: "uppercase",
+                    color: MUTED,
+                  }}
+                >
+                  Dimanche
+                </span>
+                <div className="mt-3 flex flex-col gap-2">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-lg sm:text-xl">
+                      Adulte <em style={{ color: MUTED, fontStyle: "normal" }}>(sport)</em>
+                    </span>
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }} className="text-xl sm:text-2xl whitespace-nowrap">
+                      15 000 F
+                    </span>
+                  </div>
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-lg sm:text-xl">
+                      Enfant <em style={{ color: MUTED, fontStyle: "normal" }}>(argile)</em>
+                    </span>
+                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }} className="text-xl sm:text-2xl whitespace-nowrap">
+                      5 000 F
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-              className="mt-3 text-lg leading-relaxed sm:text-xl"
+
+            <div
+              className="mt-8 border-t pt-5"
+              style={{ borderColor: "rgba(22,19,15,0.15)" }}
             >
-              Animation et matériel inclus — aucun coût caché pour l'hôtel.
-            </p>
+              <div className="flex flex-wrap items-baseline justify-between gap-3">
+                <span
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  className="text-lg sm:text-xl"
+                >
+                  Formule 2 jours, adulte <em style={{ color: MUTED, fontStyle: "normal" }}>(samedi + dimanche)</em>
+                </span>
+                <span className="flex items-baseline gap-2 whitespace-nowrap">
+                  <span
+                    style={{ fontFamily: "'Cormorant Garamond', serif", color: MUTED, textDecoration: "line-through" }}
+                    className="text-lg"
+                  >
+                    25 000 F
+                  </span>
+                  <span
+                    style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600, color: RUST }}
+                    className="text-2xl sm:text-3xl"
+                  >
+                    20 000 F
+                  </span>
+                </span>
+              </div>
+            </div>
+
             <p
               style={{
                 fontFamily: "Montserrat, sans-serif",
@@ -247,7 +324,7 @@ export default function AtelierPeinture() {
                 letterSpacing: "0.08em",
                 color: MUTED,
               }}
-              className="mt-4"
+              className="mt-5"
             >
               Tarif indicatif 2026 — devis personnalisé sur demande.
             </p>
