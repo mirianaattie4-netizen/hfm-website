@@ -77,9 +77,17 @@ export default function Navigation() {
                 borderRadius: "10px",
                 overflow: "hidden",
                 flexShrink: 0,
+                background: "#C9A96E",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
+                fontSize: "20px",
+                color: "#0A0806",
               }}
             >
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-logo_55986daa.png" alt="Mimi Fit Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              M
             </div>
             <div>
               <div
