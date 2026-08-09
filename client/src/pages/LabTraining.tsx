@@ -320,8 +320,11 @@ export default function LabTraining() {
           <div className="univers-grid">
             <div className="univers-card doux">
               <span className="badge mono">Pilates</span>
-              <h3>Le studio doux</h3>
-              <p>Respiration, gainage, longueur. Des cours en petit effectif pour travailler en profondeur, sans jamais forcer.</p>
+              <h3>Souffle</h3>
+              <p>
+                Le studio Pilates de The Lab Training. Respiration, gainage, longueur. Des cours en petit effectif pour
+                travailler en profondeur, sans jamais forcer.
+              </p>
             </div>
             <div className="univers-card intense">
               <span className="badge mono">Hyrox · Circuit Training</span>
