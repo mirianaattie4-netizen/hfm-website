@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import LabTraining from "./pages/LabTraining";
 import MobileApp from "./pages/MobileApp";
 
 // Detect if running as installed PWA (standalone mode) or on mobile
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"/"} component={mobile ? MobileApp : Home} />
       <Route path={"/app"} component={MobileApp} />
       <Route path={"/web"} component={Home} />
+      <Route path={"/the-lab-training"} component={LabTraining} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
