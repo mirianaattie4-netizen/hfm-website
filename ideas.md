@@ -1,7 +1,7 @@
-# HFM — Idées de Design
+# Mimi Fit — Idées de Design
 
 ## Contexte
-Site web premium pour HFM (Holistique Fonctionnelle Méthode), Coach Mimi, Abidjan.
+Site web premium pour Mimi Fit, Coach Mimi, Abidjan.
 Couleurs de marque : Marron foncé profond, Or chaud, Crème.
 Public : Femmes actives, cadres, entreprises, familles.
 

@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Kids World Section — Fitness gamifié pour enfants
+   Mimi Fit Kids World Section — Fitness gamifié pour enfants
    ============================================================ */
 import { useEffect } from "react";
 
@@ -86,7 +86,7 @@ export default function KidsSection() {
               marginBottom: "20px",
             }}
           >
-            HFM <em style={{ color: "#45E3FF", fontStyle: "italic" }}>Kids World</em>
+            Mimi Fit <em style={{ color: "#45E3FF", fontStyle: "italic" }}>Kids World</em>
           </h2>
           <p
             className="reveal reveal-delay-2"
@@ -111,7 +111,7 @@ export default function KidsSection() {
           <div className="reveal" style={{ borderRadius: "20px", overflow: "hidden", height: "400px" }}>
             <img
               src={KIDS_IMG}
-              alt="HFM Kids World — Fitness pour enfants Abidjan"
+              alt="Mimi Fit Kids World — Fitness pour enfants Abidjan"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>

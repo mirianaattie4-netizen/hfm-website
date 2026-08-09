@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Contact & Profil Coach Mimi
+   Mimi Fit PWA — Onglet Contact & Profil Coach Mimi
    ============================================================ */
 
 const certifications = [
@@ -51,7 +51,7 @@ export default function ContactTab() {
           Coach <em style={{ color: "#C9A96E", fontStyle: "italic" }}>Mimi</em>
         </h2>
         <p style={{ fontSize: "12px", color: "#8A7E70", marginBottom: "6px" }}>
-          Miriana Attie · Fondatrice HFM · Née en 1997, Abidjan
+          Miriana Attie · Fondatrice Mimi Fit · Née en 1997, Abidjan
         </p>
         <blockquote
           style={{
@@ -192,13 +192,13 @@ export default function ContactTab() {
           }}
         >
           <h4 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "10px", fontWeight: 700, letterSpacing: "2px", color: "#C9A96E", textTransform: "uppercase", marginBottom: "12px" }}>
-            Cadre des Cours HFM
+            Cadre des Cours Mimi Fit
           </h4>
           {[
             "Maximum 6 participants par session",
             "2 sessions max/jour · 3 jours/semaine",
             "Durée : 45-60 minutes",
-            "Matériel fourni par HFM",
+            "Matériel fourni par Mimi Fit",
             "Tenue de sport propre exigée",
             "Certificat médical requis à l'inscription",
           ].map((item) => (

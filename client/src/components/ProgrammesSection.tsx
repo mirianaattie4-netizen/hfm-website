@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Programmes Section — Boutique & Tarifs Coaching
+   Mimi Fit Programmes Section — Boutique & Tarifs Coaching
    ============================================================ */
 import { useEffect } from "react";
 
@@ -11,7 +11,7 @@ const programmes = [
     badgeColor: "#C9A96E",
     icon: "💎",
     name: "Programme Corps Complet",
-    desc: "4 semaines de transformation. 14 séances progressives combinant les 5 piliers HFM.",
+    desc: "4 semaines de transformation. 14 séances progressives combinant les 5 piliers Mimi Fit.",
     features: ["14 séances", "Guide nutrition", "Tous niveaux", "PDF premium"],
     price: "55 000",
     currency: "FCFA",
@@ -510,7 +510,7 @@ export default function ProgrammesSection() {
             >
               <img
                 src={PILATES_IMG}
-                alt="Pilates & Mobilité HFM"
+                alt="Pilates & Mobilité Mimi Fit"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>

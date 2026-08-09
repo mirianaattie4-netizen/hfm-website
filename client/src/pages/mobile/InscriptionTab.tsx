@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Inscription Bootcamp Pilates
+   Mimi Fit PWA — Onglet Inscription Bootcamp Pilates
    Design: Dark Luxury Gold — Mobile First
    ============================================================ */
 import { useState } from "react";
@@ -96,7 +96,7 @@ export default function InscriptionTab() {
     const weekendLabel = weekends.find((w) => w.value === form.weekend)?.label || form.weekend;
     const niveauLabel = niveaux.find((n) => n.value === form.niveau)?.label || form.niveau;
     const msg = encodeURIComponent(
-      `🌿 *INSCRIPTION BOOTCAMP PILATES — HFM*\n\n` +
+      `🌿 *INSCRIPTION BOOTCAMP PILATES — Mimi Fit*\n\n` +
       `👤 ${form.prenom} ${form.nom} | ${form.age} ans | ${niveauLabel}\n` +
       `📱 ${form.telephone}\n` +
       `📧 ${form.email || "—"}\n\n` +
@@ -268,7 +268,7 @@ export default function InscriptionTab() {
               {errors.niveau && <p style={errStyle}>{errors.niveau}</p>}
             </div>
             <div style={{ marginBottom: "16px" }}>
-              <label style={labelStyle}>Comment avez-vous entendu parler de HFM ?</label>
+              <label style={labelStyle}>Comment avez-vous entendu parler de Mimi Fit ?</label>
               <select value={form.comment} onChange={(e) => update("comment", e.target.value)}
                 style={{ ...inputStyle, appearance: "none" }}>
                 <option value="" style={{ background: card }}>Sélectionner</option>
@@ -417,7 +417,7 @@ export default function InscriptionTab() {
                   {form.rgpd && <span style={{ color: "#0A0806", fontSize: "11px", fontWeight: 900 }}>✓</span>}
                 </div>
                 <span style={{ color: "#8A7E70", fontSize: "12px", lineHeight: 1.7, fontFamily: "'Montserrat', sans-serif" }}>
-                  J'accepte que mes informations soient utilisées par Coach Mimi / HFM pour la gestion de mon inscription. *
+                  J'accepte que mes informations soient utilisées par Coach Mimi / Mimi Fit pour la gestion de mon inscription. *
                 </span>
               </label>
               {errors.rgpd && <p style={{ ...errStyle, marginTop: "6px" }}>{errors.rgpd}</p>}

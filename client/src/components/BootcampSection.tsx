@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Bootcamp Weekend — Partenariat Les Jardins d'Eden, Grand-Bassam
+   Mimi Fit Bootcamp Weekend — Partenariat Les Jardins d'Eden, Grand-Bassam
    Design: Dark Luxury Performance
    ============================================================ */
 import { useEffect } from "react";

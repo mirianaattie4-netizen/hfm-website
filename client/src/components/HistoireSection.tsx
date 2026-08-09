@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM — Section Mon Histoire (Coach Mimi)
+   Mimi Fit — Section Mon Histoire (Coach Mimi)
    Design: Dark Luxury Performance · Noir #0A0806 + Or #C9A96E
    ============================================================ */
 import { useEffect } from "react";
@@ -66,8 +66,8 @@ const timeline = [
   {
     year: "2024",
     age: "37 ans",
-    title: "HFM est né",
-    text: "Holistique Fonctionnelle Méthode. Sa méthode, ses règles, son nom. Zéro machine, maximum 6 personnes par séance, 100% poids du corps. HFM, c'est elle — et elle n'a jamais été aussi libre.",
+    title: "Mimi Fit est né",
+    text: "Sa méthode, ses règles, son nom. Zéro machine, maximum 6 personnes par séance, 100% poids du corps. Mimi Fit, c'est elle — et elle n'a jamais été aussi libre.",
     icon: "🔥",
     highlight: true,
   },
@@ -281,7 +281,7 @@ export default function HistoireSection() {
               textTransform: "uppercase",
             }}
           >
-            — Miriana Attie, Coach Mimi · Fondatrice HFM
+            — Miriana Attie, Coach Mimi · Fondatrice Mimi Fit
           </div>
         </div>
 

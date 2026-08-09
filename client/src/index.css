@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   HFM — DESIGN SYSTEM: Dark Luxury Performance
+   Mimi Fit — DESIGN SYSTEM: Dark Luxury Performance
    Palette: Deep black (#0A0806) + Warm gold (#C9A96E) + Cream (#FAF6EE)
    Typography: Cormorant Garamond (serif) + Montserrat (sans)
    ============================================================ */
@@ -41,7 +41,7 @@
 }
 
 :root {
-  /* HFM Brand Colors */
+  /* Mimi Fit Brand Colors */
   --gold: oklch(0.72 0.08 65);
   --gold-light: oklch(0.80 0.07 65);
   --gold-dark: oklch(0.55 0.09 65);
@@ -134,7 +134,7 @@
     }
   }
 
-  /* HFM Typography */
+  /* Mimi Fit Typography */
   .font-serif {
     font-family: 'Cormorant Garamond', serif;
   }
@@ -145,7 +145,7 @@
     font-family: 'Montserrat', sans-serif;
   }
 
-  /* HFM Gold Divider */
+  /* Mimi Fit Gold Divider */
   .gold-divider {
     width: 50px;
     height: 1px;
@@ -181,7 +181,7 @@
 }
 
 /* ============================================================
-   HFM PWA — Mobile App Styles
+   Mimi Fit PWA — Mobile App Styles
    ============================================================ */
 
 /* Remove tap highlight on mobile */

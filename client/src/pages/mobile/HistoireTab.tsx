@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Mon Histoire (Coach Mimi)
+   Mimi Fit PWA — Onglet Mon Histoire (Coach Mimi)
    ============================================================ */
 
 const timeline = [
@@ -55,8 +55,8 @@ const timeline = [
   },
   {
     year: "2024",
-    age: "HFM est né",
-    text: "Holistique Fonctionnelle Méthode. Sa méthode, ses règles, son nom. Zéro machine, max 6 personnes, 100% poids du corps.",
+    age: "Mimi Fit est né",
+    text: "Sa méthode, ses règles, son nom. Zéro machine, max 6 personnes, 100% poids du corps.",
     icon: "🔥",
     highlight: true,
   },
@@ -247,7 +247,7 @@ export default function HistoireTab() {
               textTransform: "uppercase",
             }}
           >
-            — Miriana Attie · Coach Mimi · Fondatrice HFM
+            — Miriana Attie · Coach Mimi · Fondatrice Mimi Fit
           </div>
         </div>
       </div>

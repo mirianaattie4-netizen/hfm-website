@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Contact Section — Formulaire + Informations de contact
+   Mimi Fit Contact Section — Formulaire + Informations de contact
    ============================================================ */
 import { useEffect, useState } from "react";
 
@@ -338,7 +338,7 @@ export default function ContactSection() {
                   {
                     icon: "📘",
                     label: "Facebook",
-                    value: "HFM Coach Mimi",
+                    value: "Mimi Fit Coach Mimi",
                     link: "https://facebook.com",
                     color: "#1877F2",
                   },

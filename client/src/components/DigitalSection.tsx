@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM DigitalSection — Programmes Numériques
+   Mimi Fit DigitalSection — Programmes Numériques
    Tri : popularité · date de publication
    Design: Dark Luxury Performance
    Palette: #0A0806 (bg) + #C9A96E (gold) + #FAF6EE (cream)
@@ -32,7 +32,7 @@ const allProducts = [
     badge: "NOUVEAU",
     badgeColor: "#6B9E78",
     title: "Guide Pilates au Sol",
-    subtitle: "Méthode HFM — Niveau débutant à avancé",
+    subtitle: "Méthode Mimi Fit — Niveau débutant à avancé",
     description: "Le guide complet de la méthode Pilates au sol de Coach Mimi. Postures, respirations, enchaînements et conseils pour progresser à votre rythme.",
     includes: ["50 exercices Pilates", "3 niveaux de difficulté", "Conseils nutrition", "Programme 8 semaines"],
     format: "PDF · 58 pages",
@@ -91,9 +91,9 @@ const allProducts = [
     icon: "💎",
     badge: "MEILLEURE VALEUR",
     badgeColor: "#C9A96E",
-    title: "Pack Digital Complet HFM",
+    title: "Pack Digital Complet Mimi Fit",
     subtitle: "Tous les programmes + 1 mois de suivi WhatsApp",
-    description: "L'intégralité des programmes digitaux HFM en un seul pack premium. Inclut tous les PDF, toutes les vidéos et 1 mois de suivi personnalisé par WhatsApp avec Coach Mimi.",
+    description: "L'intégralité des programmes digitaux Mimi Fit en un seul pack premium. Inclut tous les PDF, toutes les vidéos et 1 mois de suivi personnalisé par WhatsApp avec Coach Mimi.",
     includes: ["5 programmes PDF + vidéos", "1 mois suivi WhatsApp Coach Mimi", "Bilan initial personnalisé", "Mises à jour gratuites à vie"],
     format: "Accès immédiat · Tout inclus",
     color: "#C9A96E",
@@ -162,7 +162,7 @@ export default function DigitalSection() {
             Programmes <em style={{ color: "#C9A96E", fontStyle: "italic" }}>Digitaux</em>
           </h2>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#9E8E7E", maxWidth: "600px", margin: "0 auto", lineHeight: 1.7 }}>
-            La méthode HFM accessible depuis chez vous. PDF téléchargeables, vidéos HD et plans d'entraînement conçus par Coach Mimi.
+            La méthode Mimi Fit accessible depuis chez vous. PDF téléchargeables, vidéos HD et plans d'entraînement conçus par Coach Mimi.
           </p>
         </div>
 

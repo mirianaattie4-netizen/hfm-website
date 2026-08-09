@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Galerie (Photos & Diplômes)
+   Mimi Fit PWA — Onglet Galerie (Photos & Diplômes)
    ============================================================ */
 import { useState } from "react";
 

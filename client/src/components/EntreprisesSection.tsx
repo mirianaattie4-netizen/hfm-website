@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Entreprises Section — Programme Bien-Être pour Collaborateurs
+   Mimi Fit Entreprises Section — Programme Bien-Être pour Collaborateurs
    ============================================================ */
 import { useEffect } from "react";
 
@@ -27,7 +27,7 @@ const formules = [
     subtitle: "Team Building",
     price: "100 000",
     seances: "1 séance",
-    features: ["Jusqu'à 15 participants", "Cours collectif sur site", "Matériel fourni par HFM", "Animateur Coach Mimi"],
+    features: ["Jusqu'à 15 participants", "Cours collectif sur site", "Matériel fourni par Mimi Fit", "Animateur Coach Mimi"],
     highlight: false,
   },
   {
@@ -107,13 +107,13 @@ export default function EntreprisesSection() {
               className="reveal reveal-delay-2"
               style={{ fontSize: "15px", color: "#8A7E70", lineHeight: 1.8, marginBottom: "20px" }}
             >
-              Offrez à vos collaborateurs le programme bien-être qu'ils méritent. HFM intervient dans vos locaux ou dans nos espaces partenaires.
+              Offrez à vos collaborateurs le programme bien-être qu'ils méritent. Mimi Fit intervient dans vos locaux ou dans nos espaces partenaires.
             </p>
             <p
               className="reveal reveal-delay-3"
               style={{ fontSize: "14px", color: "#8A7E70", lineHeight: 1.8, marginBottom: "30px" }}
             >
-              Matériel fourni par HFM — zéro contrainte logistique pour vous. Séances de 6 participants maximum pour un suivi personnalisé optimal.
+              Matériel fourni par Mimi Fit — zéro contrainte logistique pour vous. Séances de 6 participants maximum pour un suivi personnalisé optimal.
             </p>
             <a
               href="mailto:hfm2026@outlook.fr"
@@ -150,7 +150,7 @@ export default function EntreprisesSection() {
           <div className="reveal" style={{ borderRadius: "20px", overflow: "hidden", height: "450px" }}>
             <img
               src={ENTERPRISE_IMG}
-              alt="Programme bien-être entreprise HFM Abidjan"
+              alt="Programme bien-être entreprise Mimi Fit Abidjan"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>

@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Accueil (Home Tab)
+   Mimi Fit PWA — Onglet Accueil (Home Tab)
    Design: Dark Luxury Performance · Mobile First
    ============================================================ */
 
@@ -35,7 +35,7 @@ export default function HomeTab() {
       >
         <img
           src={HERO_IMG}
-          alt="HFM Hero"
+          alt="Mimi Fit Hero"
           style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
         />
         <div
@@ -76,9 +76,8 @@ export default function HomeTab() {
               marginBottom: "10px",
             }}
           >
-            Holistique<br />
-            <em style={{ color: "#C9A96E", fontStyle: "italic" }}>Fonctionnelle</em><br />
-            Méthode
+            Mimi<br />
+            <em style={{ color: "#C9A96E", fontStyle: "italic" }}>Fit</em>
           </h1>
           <p
             style={{
@@ -201,7 +200,7 @@ export default function HomeTab() {
             marginBottom: "16px",
           }}
         >
-          Les 5 Piliers <em style={{ color: "#C9A96E", fontStyle: "italic" }}>HFM</em>
+          Les 5 Piliers <em style={{ color: "#C9A96E", fontStyle: "italic" }}>Mimi Fit</em>
         </h2>
         <div style={{ display: "flex", gap: "8px", overflowX: "auto", paddingBottom: "8px" }}>
           {pillars.map((p) => (
@@ -275,7 +274,7 @@ export default function HomeTab() {
                 Coach <em style={{ color: "#C9A96E" }}>Mimi</em>
               </div>
               <div style={{ fontSize: "11px", color: "#8A7E70", fontFamily: "'Montserrat', sans-serif" }}>
-                Miriana Attie · Fondatrice HFM
+                Miriana Attie · Fondatrice Mimi Fit
               </div>
             </div>
           </div>
