@@ -383,10 +383,10 @@ export default function LabTraining() {
                   <div className="coach-photo">
                     Photo
                     <br />
-                    Coach Hyrox
+                    Coach Gaoussou
                   </div>
                   <span className="badge mono">Hyrox · Circuit Training</span>
-                  <h3>Coach Hyrox</h3>
+                  <h3>Coach Gaoussou</h3>
                   <p>Préparation physique intense — Hyrox, circuit training et renforcement.</p>
                 </div>
               </div>
