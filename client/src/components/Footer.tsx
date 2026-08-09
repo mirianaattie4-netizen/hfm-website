@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Footer — Dark luxury avec liens et informations légales
+   Mimi Fit Footer — Dark luxury avec liens et informations légales
    ============================================================ */
 
 export default function Footer() {
@@ -45,7 +45,7 @@ export default function Footer() {
                   color: "#0A0806",
                 }}
               >
-                H
+                M
               </div>
               <div>
                 <div
@@ -57,10 +57,10 @@ export default function Footer() {
                     color: "#FAF6EE",
                   }}
                 >
-                  HFM
+                  Mimi Fit
                 </div>
                 <div style={{ fontSize: "9px", color: "#8A7E70", letterSpacing: "1.5px" }}>
-                  Holistique Fonctionnelle Méthode
+                  Coaching Fitness Premium
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: "12px", color: "#6B5B4E" }}>
-            © 2026 HFM — Holistique Fonctionnelle Méthode · Coach Mimi · Abidjan, Côte d'Ivoire
+            © 2026 Mimi Fit · Coach Mimi · Abidjan, Côte d'Ivoire
           </p>
           <div style={{ display: "flex", gap: "20px" }}>
             {["Wave", "Orange Money", "PayPal", "Carte bancaire"].map((p) => (

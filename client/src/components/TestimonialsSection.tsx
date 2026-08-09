@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Testimonials Section — Témoignages clients
+   Mimi Fit Testimonials Section — Témoignages clients
    ============================================================ */
 import { useEffect, useState } from "react";
 

@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Programmes
+   Mimi Fit PWA — Onglet Programmes
    ============================================================ */
 import { useState } from "react";
 
@@ -28,7 +28,7 @@ export default function ProgrammesTab() {
             marginBottom: "4px",
           }}
         >
-          Offres HFM
+          Offres Mimi Fit
         </div>
         <h2
           style={{

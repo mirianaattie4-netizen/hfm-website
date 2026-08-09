@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import AtelierPeinture from "./pages/AtelierPeinture";
 import Home from "./pages/Home";
 import MobileApp from "./pages/MobileApp";
 
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"/"} component={mobile ? MobileApp : Home} />
       <Route path={"/app"} component={MobileApp} />
       <Route path={"/web"} component={Home} />
+      <Route path={"/atelier-peinture"} component={AtelierPeinture} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

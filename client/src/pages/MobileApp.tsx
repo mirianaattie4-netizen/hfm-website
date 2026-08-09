@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Application Mobile Principale
+   Mimi Fit PWA — Application Mobile Principale
    Navigation par onglets en bas (iOS/Android style)
    Design: Dark Luxury Performance · Noir #0A0806 + Or #C9A96E
    ============================================================ */
@@ -99,12 +99,20 @@ export default function MobileApp() {
               borderRadius: "8px",
               overflow: "hidden",
               flexShrink: 0,
+              background: "#C9A96E",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 700,
+              fontSize: "17px",
+              color: "#0A0806",
             }}
           >
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-logo_55986daa.png" alt="HFM" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            M
           </div>
           <div style={{ flex: 1 }}>
-            <div style={{ fontSize: "12px", fontWeight: 700, color: "#FAF6EE" }}>Installer HFM</div>
+            <div style={{ fontSize: "12px", fontWeight: 700, color: "#FAF6EE" }}>Installer Mimi Fit</div>
             <div style={{ fontSize: "10px", color: "#8A7E70" }}>Ajouter à l'écran d'accueil</div>
           </div>
           <button
@@ -161,9 +169,17 @@ export default function MobileApp() {
               height: "32px",
               borderRadius: "8px",
               overflow: "hidden",
+              background: "#C9A96E",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 700,
+              fontSize: "15px",
+              color: "#0A0806",
             }}
           >
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663442254125/DMEvWf4AdGktbnpQDKsJSQ/hfm-logo_55986daa.png" alt="HFM" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            M
           </div>
           <div>
             <div
@@ -176,7 +192,7 @@ export default function MobileApp() {
                 lineHeight: 1.2,
               }}
             >
-              HFM
+              Mimi Fit
             </div>
             <div style={{ fontSize: "8px", color: "#9E8E7E", letterSpacing: "1px" }}>
               Coach Mimi · Abidjan

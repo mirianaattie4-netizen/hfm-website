@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM — Formulaire d'inscription Bootcamp Pilates
+   Mimi Fit — Formulaire d'inscription Bootcamp Pilates
    Design : Dark Luxury Gold — Playfair Display + Montserrat
    ============================================================ */
 import { useState } from "react";
@@ -117,7 +117,7 @@ export default function InscriptionBootcamp() {
     const niveauLabel = niveaux.find((n) => n.value === form.niveau)?.label || form.niveau;
 
     const msg = encodeURIComponent(
-      `🌿 *INSCRIPTION BOOTCAMP PILATES — HFM*\n\n` +
+      `🌿 *INSCRIPTION BOOTCAMP PILATES — Mimi Fit*\n\n` +
       `👤 *Identité*\n` +
       `Prénom : ${form.prenom}\n` +
       `Nom : ${form.nom}\n` +
@@ -418,7 +418,7 @@ export default function InscriptionBootcamp() {
               </div>
 
               <div style={fieldStyle}>
-                <label style={labelStyle}>Comment avez-vous entendu parler de HFM ?</label>
+                <label style={labelStyle}>Comment avez-vous entendu parler de Mimi Fit ?</label>
                 <select
                   value={form.comment}
                   onChange={(e) => update("comment", e.target.value)}
@@ -672,7 +672,7 @@ export default function InscriptionBootcamp() {
                     {form.rgpd && <span style={{ color: "#0A0806", fontSize: "12px", fontWeight: 900 }}>✓</span>}
                   </div>
                   <span style={{ color: "#8A7E70", fontSize: "13px", lineHeight: 1.7, fontFamily: "'Montserrat', sans-serif" }}>
-                    J'accepte que mes informations soient utilisées par Coach Mimi / HFM pour la gestion de mon inscription au Bootcamp Pilates. Aucune donnée ne sera partagée avec des tiers. *
+                    J'accepte que mes informations soient utilisées par Coach Mimi / Mimi Fit pour la gestion de mon inscription au Bootcamp Pilates. Aucune donnée ne sera partagée avec des tiers. *
                   </span>
                 </label>
                 {errors.rgpd && <p style={{ ...errorStyle, marginTop: "8px" }}>{errors.rgpd}</p>}

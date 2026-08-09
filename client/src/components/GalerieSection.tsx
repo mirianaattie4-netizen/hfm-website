@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM — Section Galerie & Diplômes (Vraies Photos + Certifications)
+   Mimi Fit — Section Galerie & Diplômes (Vraies Photos + Certifications)
    Design: Dark Luxury Performance · Noir #0A0806 + Or #C9A96E
    ============================================================ */
 import { useEffect, useState } from "react";

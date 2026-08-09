@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Home Page — Assemblage de toutes les sections
+   Mimi Fit Home Page — Assemblage de toutes les sections
    Design: Dark Luxury Performance
    Palette: #0A0806 (bg) + #C9A96E (gold) + #FAF6EE (cream)
    Typography: Playfair Display + Montserrat

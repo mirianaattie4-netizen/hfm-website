@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Entreprises
+   Mimi Fit PWA — Onglet Entreprises
    ============================================================ */
 
 const stats = [
@@ -130,7 +130,7 @@ export default function EntrepriseTab() {
               name: "SÉANCE UNIQUE",
               sub: "Team Building",
               price: "100 000 F",
-              features: ["Jusqu'à 15 participants", "Cours collectif sur site", "Matériel fourni par HFM"],
+              features: ["Jusqu'à 15 participants", "Cours collectif sur site", "Matériel fourni par Mimi Fit"],
               highlight: false,
             },
             {

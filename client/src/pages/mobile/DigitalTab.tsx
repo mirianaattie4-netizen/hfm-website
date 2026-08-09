@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM PWA — Onglet Programmes Digitaux
+   Mimi Fit PWA — Onglet Programmes Digitaux
    Tri : popularité · date de publication
    Design: Dark Luxury Performance · Mobile First
    ============================================================ */
@@ -30,7 +30,7 @@ const allProducts = [
     badge: "NOUVEAU",
     badgeColor: "#6B9E78",
     title: "Guide Pilates au Sol",
-    subtitle: "Débutant à avancé · Méthode HFM",
+    subtitle: "Débutant à avancé · Méthode Mimi Fit",
     format: "PDF · 58 pages",
     color: "#6B9E78",
     popularity: 76,
@@ -85,7 +85,7 @@ const allProducts = [
     icon: "💎",
     badge: "MEILLEURE VALEUR",
     badgeColor: "#C9A96E",
-    title: "Pack Digital Complet HFM",
+    title: "Pack Digital Complet Mimi Fit",
     subtitle: "Tout inclus + 1 mois suivi WhatsApp",
     format: "Accès immédiat · Tout inclus",
     color: "#C9A96E",

@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Hero Section — Dark Luxury Performance
+   Mimi Fit Hero Section — Dark Luxury Performance
    Full-screen hero with generated image background, gold accents
    ============================================================ */
 import { useEffect, useRef } from "react";
@@ -134,11 +134,9 @@ export default function HeroSection() {
             color: "#FAF6EE",
           }}
         >
-          Holistique
+          Mimi
           <br />
-          <span style={{ color: "#C9A96E", fontStyle: "italic" }}>Fonctionnelle</span>
-          <br />
-          <span style={{ color: "#9E8E7E" }}>Méthode</span>
+          <span style={{ color: "#C9A96E", fontStyle: "italic" }}>Fit</span>
         </h1>
 
         {/* Subtitle */}
@@ -242,7 +240,7 @@ export default function HeroSection() {
           }}
         >
           {[
-            { num: "5", label: "Piliers HFM" },
+            { num: "5", label: "Piliers Mimi Fit" },
             { num: "3+", label: "Certifications" },
             { num: "6", label: "Lieux à Abidjan" },
             { num: "100%", label: "Poids de Corps" },

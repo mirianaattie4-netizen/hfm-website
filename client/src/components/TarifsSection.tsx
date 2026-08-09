@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Tarifs Section — Grille Tarifaire V2 complète
+   Mimi Fit Tarifs Section — Grille Tarifaire V2 complète
    Design: Dark Luxury Performance
    ============================================================ */
 import { useEffect, useState } from "react";
@@ -416,7 +416,7 @@ export default function TarifsSection() {
             {[
               { icon: "📋", title: "Abonnements", desc: "Nominatifs et non transférables · Packs valables 3 mois après achat" },
               { icon: "❌", title: "Annulation", desc: "24h à l'avance minimum · Certificat médical requis à l'inscription" },
-              { icon: "👗", title: "Tenue", desc: "Tenue de sport propre exigée · Matériel fourni par HFM" },
+              { icon: "👗", title: "Tenue", desc: "Tenue de sport propre exigée · Matériel fourni par Mimi Fit" },
             ].map((c) => (
               <div key={c.title} style={{ display: "flex", gap: "12px" }}>
                 <span style={{ fontSize: "20px" }}>{c.icon}</span>

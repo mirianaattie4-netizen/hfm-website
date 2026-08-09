@@ -1,5 +1,5 @@
 /* ============================================================
-   HFM Méthode Section — Les 5 Piliers + Présentation Coach Mimi
+   Mimi Fit Méthode Section — Les 5 Piliers + Présentation Coach Mimi
    ============================================================ */
 import { useEffect } from "react";
 
@@ -94,7 +94,7 @@ export default function MethodeSection() {
               marginBottom: "20px",
             }}
           >
-            Les 5 Piliers <em style={{ color: "#C9A96E", fontStyle: "italic" }}>HFM</em>
+            Les 5 Piliers <em style={{ color: "#C9A96E", fontStyle: "italic" }}>Mimi Fit</em>
           </h2>
           <p
             className="reveal reveal-delay-2"
@@ -210,7 +210,7 @@ export default function MethodeSection() {
             >
               <img
                 src={COACHING_IMG}
-                alt="Coach Mimi — Séance de groupe HFM"
+                alt="Coach Mimi — Séance de groupe Mimi Fit"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -298,7 +298,7 @@ export default function MethodeSection() {
                 marginBottom: "20px",
               }}
             >
-              Miriana Attie — surnommée <strong style={{ color: "#FAF6EE" }}>Coach Mimi</strong> — est une coach fitness certifiée internationale, née le 20 septembre 1987 à Abidjan. Fondatrice de HFM, elle a commencé sa carrière à 35 ans, après deux mariages et trois filles. Sa force ? Avoir tout construit seule, sans diplôme scolaire, avec une seule arme : sa volonté.
+              Miriana Attie — surnommée <strong style={{ color: "#FAF6EE" }}>Coach Mimi</strong> — est une coach fitness certifiée internationale, née le 20 septembre 1987 à Abidjan. Fondatrice de Mimi Fit, elle a commencé sa carrière à 35 ans, après deux mariages et trois filles. Sa force ? Avoir tout construit seule, sans diplôme scolaire, avec une seule arme : sa volonté.
             </p>
 
             <p
